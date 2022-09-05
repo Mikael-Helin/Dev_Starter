@@ -22,7 +22,7 @@ When I tried to install Docker Desktop on Windows then I had some issues. The is
 
 ## Test Your Docker Installation
 
-Check if your Docker Desktop works.
+Check if your Docker Desktop works. Here is my super quick guide.
 
 1. Open Docker Desktop from the Start menu.
 2. In git bash type
@@ -30,5 +30,5 @@ Check if your Docker Desktop works.
 3. Look in Docker Desktop, do you see the image "docker/getting-started:latest"? You should...
 4. Browse to localhost with your web browser. If you see a guide.... it works!
 
-You may instead follow this guide "Exploring Docker Desktop with a quick example"
+You may instead follow the real guide "Exploring Docker Desktop with a quick example"
 https://www.docker.com/blog/getting-started-with-docker-desktop/
