@@ -1,12 +1,16 @@
 # Dev_Starter
 
+The purpose with this repo, is to help you get started with development with as little fuzz as possible. What we have here, are docker images with the databases PostgreSQL and MariaDB including their WebGUIs.
+
+Later, there might be docker images with NodeJS, MSSQL and .NET for Linux.
+
 ## Pre-Requestives
 
 You need git and you need docker installed. Below are links with information on Windows installation. The installation should be straigtforward.
 
 Docker Desktop exists for Windows and Mac, but not for Linux. 
 
-https://code.visualstudio.com/
+https://code.visualstudio.com/  //Good to have if we figure out how to use VS code with Docker.
 
 https://gitforwindows.org/
 
@@ -18,7 +22,7 @@ When I tried to install Docker Desktop on Windows then I had some issues. The is
 
 https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 
-## Test Docker
+## Test Docker Installation
 
 Check if your Docker Desktop works.
 
