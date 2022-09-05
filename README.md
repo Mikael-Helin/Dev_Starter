@@ -41,7 +41,9 @@ You may wish to instead follow the real guide "Exploring Docker Desktop with a q
 
 So far, what I have seen, Docker Desktop makes it easy to start, stop and easy to list and delete containers and images. If you are on Linux, you might try to figure out how to list images and containers and then figure on how to start adn stop them etc. The rest, is command line anyway - for all operating systems.
 
-## 4. Winpty??
+## 4. FAQ
+
+### 4.1 Winpty??
 
 Sometimes on Windows you need to type winpty before docker, like this
 
@@ -53,10 +55,27 @@ Linux (and Mac?):
 
 		docker <some stuff>
 
+### 4.2 Run multiple containers?
+
+There are other ways, but here we just keep it simple.
+
+Open a new terminal for each container. You run docker in separate terminals. Then you enter from host terminal into the container terminal to start services. If you exit the container terminal then the container stops... a stopped container has no services... so you cannot exit if you want to runt services... therefore you need multiple host terminals.
+
+Just keeping it simlpe so far. No swarms or clusters, not even innocent ampersands.
+
 ## 5. Current Dev Containers
 
-MariaDB with Apache2 and PHPMyAdmin on Debian Bullseye.
+This is what we have
 
-PostgreSQL with Apache2 and phppgadmin on Debian Bullseye.
+* MariaDB with Apache2 and PHPMyAdmin on Debian Bullseye.
+* PostgreSQL with Apache2 and phppgadmin on Debian Bullseye.
 
-_For more instuctions, please proceed to their folders._
+and this is what we wish we had
+
+* NodeJS and React development images.
+* MSSQL under Ubuntu.
+* MongoDB under Ubuntu.
+* .NET SDK under Ubuntu.
+* A ToDo list sample with NodeJS and PostgreSQL.
+
+_For more instuctions, please proceed to respective container folders._
