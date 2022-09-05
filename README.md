@@ -10,17 +10,15 @@ You need git and you need docker installed. Below are links with information on 
 
 Docker Desktop exists for Windows and Mac, but not for Linux. 
 
-https://code.visualstudio.com/  //Good to have if we figure out how to use VS code with Docker.
+Good to have if we figure out how to use VS code with Docker: https://code.visualstudio.com/
 
-https://gitforwindows.org/
+Git for Windows: https://gitforwindows.org/
 
-https://docs.docker.com/desktop/install/windows-install/
+Docker Desktop (Windows): https://docs.docker.com/desktop/install/windows-install/
 
-https://docs.docker.com/desktop/install/mac-install/
+Docker Desktop (Mac): https://docs.docker.com/desktop/install/mac-install/
 
-When I tried to install Docker Desktop on Windows then I had some issues. The issue was that WSL2 did not install corectly. In my case, I found a working troubleshoot in following link.
-
-https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+When I tried to install Docker Desktop on Windows then I had some issues. The issue was that WSL2 did not install corectly. In my case, I found a working troubleshoot to install WSL2 in following link: https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 
 ## Test Docker Installation
 
