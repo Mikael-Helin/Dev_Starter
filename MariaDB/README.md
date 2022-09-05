@@ -52,8 +52,8 @@ When you have logged in:
 
 * Click the Databases tab,
 * enter "food" as 'Database Name' into the field,
-* click the Create-button.
-* click Import tab,
+* click the Create-button,
+* click the Import tab,
 * click on browse and upload **food.sql**.
 * Click the Go-button.
   
