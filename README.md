@@ -9,7 +9,7 @@ So, the purpose, is to help you get started with your coding without installatio
 
 It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know it myself ;-))_. There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you need and that is it.
 
-## 1. Pre-Requestives and Installations
+## **1. Pre-Requestives and Installations**
 
 You need git and you need docker installed. Visual Studio code is a nice to have. Below are links with information on Windows installations. These pre-requestive installation should be straigtforward and easy for you to follow. The docker stuff is not self-evident, but this guide still helps you.
 
@@ -27,7 +27,7 @@ Note that Git and Bash are completely separate, but they are called Git Bash on 
 
 _Troubleshoot: When I tried to install Docker Desktop on Windows then I had an issue. The issue was that WSL2 did not install corectly. In my case, I found a working troubleshoot to install WSL2 in following link: https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package_
 
-## 2. Test Your Docker Installation
+## **2. Test Your Docker Installation**
 
 Check if your Docker Desktop works. Here is my super quick guide (which you may skip if you want to follow the official guide, see link below).
 
@@ -41,7 +41,7 @@ Check if your Docker Desktop works. Here is my super quick guide (which you may 
 
 You may wish to instead follow the real guide "Exploring Docker Desktop with a quick example". Link: https://www.docker.com/blog/getting-started-with-docker-desktop/
 
-## 3. Help, help.. I am on Linux!
+## **3. Help, help.. I am on Linux!**
 
 So far, what I have seen, Docker Desktop makes it easy to start, stop and easy to list and delete containers and images. If you are on Linux, you might try to figure out how to list images and containers and then figure on how to start adn stop them etc. The rest, is command line anyway - for all operating systems.
 
@@ -51,9 +51,9 @@ Examples to study elsewhere:
 		docker images # same same but different
 		docker ps
 
-## 4. FAQ
+## **4. FAQ**
 
-### 4.1 Winpty??
+### **4.1 Winpty??**
 
 Sometimes on Windows you need to type winpty before docker, like this
 
@@ -66,13 +66,25 @@ Linux and Mac:
 		docker <some stuff>
 
 
-### 4.2 Run multiple containers?
+### **4.2 Run multiple containers?**
 
 There are other ways to run multiple containers, but here we just keep it simple and there aren't many continers we need to run.
 
 Open a new terminal for each container. You run docker in separate terminals. Then you enter from host terminal into the container terminal to start services. If you exit the container terminal then the container stops... a stopped container has no services... so you cannot exit if you want to runt services... therefore you need multiple host terminals.
 
 Just keeping it simlpe so far. No swarms or clusters, not even innocent ampersands.
+
+### **4.3 I cannot start service or the container with service behave weird**
+
+Maybe there are multiple containers using the same host port? You can only have 1 service for each port on your host.
+
+For example:
+
+PHPMyAdmin uses port 80 in the container but I chose port 81 on the host.\
+phpPgAdmin uses port 80 in the container but I chose port 82 on the host.\
+node or nodemon will have port 80 in its container and also port 80 in the host.
+
+Notice how we avoid collissions on the host ports.
 
 ## 5. Current Dev Containers
 
