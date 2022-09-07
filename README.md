@@ -78,7 +78,7 @@ Open a new terminal for each container. You run docker in separate terminals. Th
 
 Just keeping it simlpe so far. No swarms or clusters, not even innocent ampersands.
 
-### **4.3 I cannot start service or the container with service behave weird**
+### **4.3 I cannot start service or the container**
 
 Maybe there are multiple containers using the same host port? You can only have 1 service for each port on your host.
 
@@ -98,7 +98,7 @@ This is what we so far have
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
 * PostgreSQL with Apache2 and phppgadmin on Debian Bullseye.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL
-* MSSQL probably on Ubuntu.\
+* MSSQL probably on Linux.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
 
 and this is what we wish to have

@@ -24,7 +24,7 @@ Other details:
 
 ***port: 5432***
 
-***URL: http://127.0.0.1:81/phppgadmin***
+***URL: http://127.0.0.1:82/phppgadmin***
 ___
 
 ## **3. Pre-Requestives**
@@ -47,13 +47,13 @@ But if you already have the needed image, then the same following command will j
 
 Windows:
 
-        winpty docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:5432:5432 \
-        --name postgres -ti mikaelhelin/postgres_mariadb bash
+        winpty docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
+        --name postgres -ti mikaelhelin/debian_postgres bash
 
 Linux and Mac:
 
-        docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:5432:5432 \
-        --name postgres -ti mikaelhelin/postgres_mariadb bash
+        docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
+        --name postgres -ti mikaelhelin/debian_postgres bash
 
 ___
 
@@ -69,12 +69,12 @@ This is how you do it:
 
 Windows:
 
-        winpty docker attach mariadb
+        winpty docker attach postgres
         /root/start.sh
 
 Linux and Mac:
 
-        docker attach mariadb
+        docker attach postgres
         /root/start.sh
 
 ___
@@ -97,11 +97,17 @@ You should have completed sections 3-6.
 
 When you have logged in into PHPMyAdmin:
 
-* Click the "Databases" tab,
-* enter "food" as "Database Name" into its field,
-* click the **Create** button,
-* click the **Import** tab,
-* click on **browse** and then upload **food.sql**.
-* Click the **Go** button.
-  
-And now you have uploaded some sample data. Continue to do whatever exersice you like. Pherhaps try to export your data to different format. Try delete the database and then import the export? *Warning: Importing converted export might not be as straightforward as you think.*
+* Click the **PostgreSQL** under "Servers",
+* enter the credentials from section 2.
+
+Now you are in, so let us import some sample data
+
+* click the **Schemas** just below "postgres" on the view to the left,
+* click on **Create Schema** and enter **todos** into the "Name" field and then click **Create**
+* click on the **SQL** tab,
+* click on the **Browse** button, select the **dump.sql** file and press **Execute** button.
+* Click the **todos** and then **browse** and hopefully you see a table.
+
+You can open **dump.sql** with a text editor, try it!
+
+And now you have uploaded some sample data. Continue to do whatever exersice you like. Pherhaps try to export your data to different format? Try delete the database and then import the export? *Warning: Importing converted export might not be as straightforward as you think.*
