@@ -7,7 +7,7 @@ Later, there might be docker images with NodeJS, MongoDB, Redis and as well .NET
 
 So, the purpose, is to help you get started with your coding without installation and configuration hassle. You just return here after the meeting/lesson and this guide won't be too hard for you to follow.
 
-It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know it myself ;-))_. There are plenty of Docker tutorials on YouTube, here I just want get you up starting, not primarly teaching you new stuff. We only focus on what is neeeded and that is it.
+It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know it myself ;-))_. There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you need and that is it.
 
 ## 1. Pre-Requestives and Installations
 
@@ -22,6 +22,8 @@ Git and Bash for Windows: https://gitforwindows.org/
 Docker Desktop (Windows): https://docs.docker.com/desktop/install/windows-install/
 
 Docker Desktop (Mac): https://docs.docker.com/desktop/install/mac-install/
+
+Note that Git and Bash are completely separate, but they are called Git Bash on Windows. The Git Bash is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to install.
 
 _Troubleshoot: When I tried to install Docker Desktop on Windows then I had an issue. The issue was that WSL2 did not install corectly. In my case, I found a working troubleshoot to install WSL2 in following link: https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package_
 
@@ -86,5 +88,6 @@ and this is what we wish to have
 * MongoDB on Ubuntu Focal.
 * .NET SDK on Ubuntu.
 * A ToDo list sample with NodeJS and PostgreSQL.
+* Redis.
 
 _For more instuctions, please proceed to respective container folders._
