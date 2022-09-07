@@ -29,7 +29,7 @@ _Troubleshoot: When I tried to install Docker Desktop on Windows then I had an i
 
 ## **2. Test Your Docker Installation**
 
-It is recommended that you complete section 1.
+It is recommended that you complete section 1 above.
 
 Check if your Docker Desktop works. Here is my super quick guide (which you may skip if you want to follow the official guide, see link below).
 
@@ -94,14 +94,18 @@ Notice how we avoid collissions on the host ports.
 
 This is what we so far have
 
-* MariaDB with Apache2 and PHPMyAdmin on Debian Bullseye.
-* PostgreSQL with Apache2 and phppgadmin on Debian Bullseye.
-* MSSQL probably on Ubuntu(?).
+* MariaDB with Apache2 and PHPMyAdmin on Debian Bullseye.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
+* PostgreSQL with Apache2 and phppgadmin on Debian Bullseye.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL
+* MSSQL probably on Ubuntu(?).\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
 
 and this is what we wish to have
 
 * NodeJS and React development images.
-* MongoDB on Ubuntu Focal.
+* MongoDB on Ubuntu Focal.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB
 * .NET SDK on Ubuntu.
 * A ToDo list sample with NodeJS and PostgreSQL.
 * Redis.
