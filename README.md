@@ -80,8 +80,8 @@ Maybe there are multiple containers using the same host port? You can only have 
 
 For example:
 
-* phpPgAdmin uses port 80 in the container but I chose port **82** on the host.\
-* PHPMyAdmin uses port 80 in the container but I chose port **81** on the host.\
+* phpPgAdmin uses port 80 in the container but I chose port **82** on the host.
+* PHPMyAdmin uses port 80 in the container but I chose port **81** on the host.
 * node or nodemon will have port 80 in its container and also port **80** in the host.
 
 Notice how we avoid collissions on the host ports.
