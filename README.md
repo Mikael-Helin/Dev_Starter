@@ -41,6 +41,8 @@ Check if your Docker Desktop works. Here is my super quick guide (which you may 
 
 You may wish to instead follow the real guide "Exploring Docker Desktop with a quick example". Link: https://www.docker.com/blog/getting-started-with-docker-desktop/
 
+You may now skip to section 5.
+
 ## **3. Help, help.. I am on Linux!**
 
 So far, what I have seen, Docker Desktop makes it easy to start, stop and easy to list and delete containers and images. If you are on Linux, you might try to figure out how to list images and containers and then figure on how to start adn stop them etc. The rest, is command line anyway - for all operating systems.
