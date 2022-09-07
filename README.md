@@ -29,6 +29,8 @@ _Troubleshoot: When I tried to install Docker Desktop on Windows then I had an i
 
 ## **2. Test Your Docker Installation**
 
+It is recommended that you complete section 1.
+
 Check if your Docker Desktop works. Here is my super quick guide (which you may skip if you want to follow the official guide, see link below).
 
 1. Open Docker Desktop from the Start menu.
