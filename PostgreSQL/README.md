@@ -33,7 +33,7 @@ Have Bash installed on your system.
 
 Have Docker or Docker Desktop installed on your system.
 
-See (link)
+See section 1-2 in https://github.com/Mikael-Helin/Dev_Starter
 
 ___
 

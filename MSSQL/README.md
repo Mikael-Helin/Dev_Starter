@@ -13,14 +13,17 @@ Other details:
 **port: 1433**
 
 ___
-## **Pre-Requestives**
+
+## **1. Pre-Requestives**
 
 Have Bash installed on your system.
 
 Have Docker or Docker Desktop installed on your system.
+
+See section 1-2 in https://github.com/Mikael-Helin/Dev_Starter
 ___
 
-## **Run The Container**
+## **2. Run The Container**
 
 The information I got from Microsoft website, didn't work for me, lot of bogus stuff in that documentation. Link: https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash
 
@@ -47,7 +50,7 @@ That is all, and you are done! :-)
 But if you insist? You can proceed to test if MSSQL is running.
 ___
 
-## **Testing to enter MSSQL CLI inside the container**
+## **3. Testing to enter MSSQL CLI inside the container**
 
 When the container is running, it actually starts MSSQL. This is actually one way how you can test if MSSQL is running.
 
@@ -66,7 +69,7 @@ Linux and Mac:
 
 ___
 
-## **Testing MSSQL with SQL Server Management Studio**
+## **4. Testing MSSQL with SQL Server Management Studio**
 
 You may download SQL Server Management Studio (SSMS) from here. Link: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 

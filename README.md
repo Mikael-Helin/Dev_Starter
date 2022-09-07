@@ -98,7 +98,7 @@ This is what we so far have
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
 * PostgreSQL with Apache2 and phppgadmin on Debian Bullseye.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL
-* MSSQL probably on Ubuntu(?).\
+* MSSQL probably on Ubuntu.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
 
 and this is what we wish to have
