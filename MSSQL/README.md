@@ -71,9 +71,11 @@ ___
 
 ## **4. Testing MSSQL with SQL Server Management Studio**
 
-You may download SQL Server Management Studio (SSMS) from here. Link: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+You may want to skip this section and use Azure Data Studio as described in section 5.
 
-And when you started SSMS do following:
+Download SQL Server Management Studio (SSMS) from here (windows only). Link: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+
+And when you installed and started SSMS do the following:
 
 * Click "Connect" then "Database Engine...",
 * enter **localhost** as "Server Name" into its field,
@@ -83,4 +85,23 @@ And when you started SSMS do following:
 * finally click the **Connect**-button.
   
 You're in!
+
+
+## **5. Testing MSSQL with SQL Server Management Studio**
+
+Azure Data Studio exists for Windows, Mac and Linux.
+
+You may download and install Azure Data Studio. Link: https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16
+
+After installing Azure Data Studio (on Windows), this is how I accessed MSSQL. Start Azure Data Studio and then
+
+* Click on **Create a connection**,
+* Check **parameters**,
+* enter **localhost** in its "Server" field
+* select **SQL Login** for "Authentication type",
+* enter **SA** in its "User name" field,
+* enter **Str9ng_Pwd** in its "Password" field,
+* and finally click on the **Connect** button.
+
+Are you in? I hope so... it worked for me.
 

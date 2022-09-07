@@ -1,20 +1,22 @@
-# MariaDB
+# **running MongoDB on Docker**
 
 Database credentials:
 
 **user: root**
 
-**password: mariadb.2022**
+**password: mongodb.2022**
 
 Other details:
 
 **host: localhost**
 
-**port: 3306**
-
-**URL: http://127.0.0.1:81/phpmyadmin**
+**port: 27017**
 
 ## Run This Container
+
+MongoDB has an official image and it can be found here: https://hub.docker.com/_/mongo
+
+
 
 First you need to run the container, if you don't have it, then following will download its image and then run the container
 
