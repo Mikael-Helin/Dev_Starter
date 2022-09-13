@@ -184,7 +184,7 @@ _For more instuctions, please proceed to respective container folders._
 
 ### **5.1. Images that we have**
 
-### **5.1.1. Single image containers**
+### **5.1.1. Future single image containers**
 
 * LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
@@ -195,7 +195,7 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
 * MongoDB on Ubuntu Focal.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB
 
-### **5.1.2 Multi image conatiners**
+### **5.1.2 Future multi image conatiners**
 
 Nothing yet.
 

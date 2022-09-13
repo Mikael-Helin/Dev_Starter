@@ -1,6 +1,20 @@
 # **Running MariaDB and Web-GUI on Docker**
 
+The purpose of this example, is to let junior and aspiring developers get started with as little fuzz as possible.
+
 ## **1. What is this?**
+
+Pros:
+1. Are official images.
+2. Passwords are sent in as environment variables.
+3. Takes less space.
+
+Cons:
+1. May break after updates when images don't match anymore.
+
+These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer with installing another client.
+
+## **1.1. Using Custom Image**
 
 Pros:
 1. Everything in one Image that works.
@@ -11,23 +25,7 @@ Cons:
 2. Cumbersome to change password, which you can for example do in phpMyAdmin.
 3. Harder to re-configure.
 
-It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer with installing another client.
-
-The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
-
-## **1.1. Using Official Images**
-
-Pros:
-1. Are official images.
-2. Passwords are sent in as environment variables.
-3. Takes less space.
-
-Cons:
-1. May break after updates when images don't match anymore.
-
-Why not then take official MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the official image and work with it but sometimes the official images may break and then you come back here, since you know here we have the image that works.
-
-If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_official
+Why not then take the custom MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the custom image too. If you want to use the custom image, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
 
 ___
 
@@ -63,9 +61,11 @@ ___
 
 It is recommended that you fulfill the pre-requestives (see section 3).
 
-If you don't have the needed image, then the following command will download the needed image and after that run the container from the image.
+If you don't have the needed images, then the following command will download the needed images and after that run the container from these images.
 
-But if you already have the needed image, then the same following command will just run the container from the already downloaded image.
+But if you already have the needed images, then the same following command will just run the container from the already downloaded images.
+
+kkk
 
 Windows:
 
