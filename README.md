@@ -9,19 +9,22 @@ The purpose with this repo, is to help you get started with web and database dev
 1. Get quickly started.
 2. Minimal configuration and installation.
 3. Minimal examples.
-4. Not about teaching, you have to teach yourself after getting started.
+4. Not about educating. You have to teach yourself after getting started.
 
 ### **0.2 What images do we currently have?**
 
-Scroll down to section 5 below and see.
+Scroll down to section 5 below to see.
 
 ### **0.3 What images may we have in the future?**
 
-Scroll down to section 5 below and see.
+Scroll down to section 5 below to see.
 
 ### **0.4 What should you know before getting started?**
 
 It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know that myself ;-))_. There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you initially need and it ends there.
+
+1. Can use git.
+2. Know what is docker, not neccessarly know how to use it.
 
 ___
 
