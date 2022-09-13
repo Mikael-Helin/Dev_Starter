@@ -46,19 +46,25 @@ You need git and you need docker installed. Visual Studio code is a nice to have
 
 ### **1.1 Git and Bash**
 
+What is Git? Git is software used for distributed version control.
+
+What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal you type CLI. For Windows, when we say terminal we refer to "Git Bash".
+
+For Windows there is Command Prompt and PowerShell. I still reccommend you to use "Git Bash" as terminal.
+
+Note that Git and Bash are completely separate programs, but they are called Git Bash on Windows. The Git Bash is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to use and install.
+
 #### **1.1.1 How to install Git and Bash on Linux or Mac?**
 
 Search online.
 
 #### **1.1.2 How to install Git and Bash on Windows?**
 
-Note that Git and Bash are completely separate, but they are called Git Bash on Windows. The Git Bash is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to install.
-
 Link: https://gitforwindows.org/
 
 ### **1.2 Docker Desktop**
 
-Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of the work is done by CLI anyway, to be without Docker Desktop is therefore not end of the world for Linux users.
+Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of the work is done by CLI anyway so to be without Docker Desktop is therefore not end of the world for Linux users.
 
 #### **1.2.1 Windows**
 
@@ -92,11 +98,13 @@ My guide:
 
 1. Open Docker Desktop from the Start menu.
 2. Open a terminal (just in any random location, just open the terminal)
-   1. On Linux and Mac the terminal may also be called console
+   1. On Linux and Mac the terminal may also be called term, console, xterm etc.
    2. On Windows to open a terminal, it is best you open Git Bash even when there are other options
    3. When you opened your terminal, type in there
 
+
 		docker run -d -p 80:80 docker/getting-started
+
 
 3. Look in Docker Desktop, do you see the image "docker/getting-started:latest"? You should...
 4. Browse to localhost with your web browser. If you see a guide.... yeah, it works!
