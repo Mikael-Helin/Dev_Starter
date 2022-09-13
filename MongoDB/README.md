@@ -90,5 +90,5 @@ which feels cumbersome.
 
 ### **2.3.2. Extension: Mongo Runner**
 
-OK, next extension.. Mongo Runner. I installed it.
+OK, next extension.. Mongo Runner. I installed it. This extension is made by Joey Yi Zhao.
 
