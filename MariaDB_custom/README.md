@@ -1,4 +1,6 @@
-# **Running MariaDB and Web-GUI on Docker**
+# **Running MariaDB and Web-GUI on Docker (using custom image)**
+
+The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
 
 ## **1. What is this?**
 
@@ -8,12 +10,10 @@ Pros:
 
 Cons:
 1. Is not official image.
-2. Cumbersome to change password, which you can for example do in phpMyAdmin.
+2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
 3. Harder to re-configure.
 
-It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer with installing another client.
-
-The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
+It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer with installing yet another client.
 
 ## **1.1. Using Official Images**
 
@@ -41,12 +41,13 @@ Database credentials:
 
 Other details:
 
-**host: localhost**
+**database host: localhost**
 
-**port: 3306**
+**database port: 3306**
 
-**URL: http://127.0.0.1:81/phpmyadmin**
+**Web-GUI URL: http://localhost:81/phpmyadmin**
 
+Login into Web-GUI with user root and password mariadb.2022.
 ___
 
 ## **3. Pre-Requestives**

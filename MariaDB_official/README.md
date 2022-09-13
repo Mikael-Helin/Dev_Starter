@@ -1,4 +1,4 @@
-# **Running MariaDB and Web-GUI on Docker**
+# **Running MariaDB and Web-GUI on Docker (using official images)**
 
 The purpose of this example, is to let junior and aspiring developers get started with as little fuzz as possible.
 
@@ -12,7 +12,7 @@ Pros:
 Cons:
 1. May break after updates when images don't match anymore.
 
-These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer with installing another client.
+These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer with installing yet another client.
 
 ## **1.1. Using Custom Image**
 
@@ -39,12 +39,13 @@ Database credentials:
 
 Other details:
 
-**host: localhost**
+**database host: localhost**
 
-**port: 3306**
+**database port: 3306**
 
-**URL: http://127.0.0.1:81/phpmyadmin**
+**Web-GUI URL: http://localhost:81**
 
+Login into Web-GUI with server **mariadb_host** and then use MariaDB root credentials.
 ___
 
 ## **3. Pre-Requestives**
@@ -83,25 +84,19 @@ ___
 
 First you need to run the container (see section 4).
 
-When the container is running, then you need to
-* enter the container and
-* inside the container start its services.
+1. Download the docker-compse.yml file
+2. Open a terminal in the same folder where you have the docker-compse.yml file.
+3. In the terminal type
 
-This is how you do it:
+        docker-compose up
 
-Windows:
+Now try to surf to the url given above! You should see the phpMyAdmin login. Login and do whatever you like to do.
 
-        winpty docker attach mariadb
-        /root/start.sh
+### **5.1. Want to change password?**
 
-Linux and Mac:
+This is the most simple way to change the password: Open the docker-compse.yml file with your text editor and change the password before you run docker-compose.
 
-        docker attach mariadb
-        /root/start.sh
-
-Now try to surf to the url given above! You should see the PHPMyAdmin login. Login and do whatever you like to do.
-
-If any service crashes, then run those commands above again, those here in section 5.
+Otherwise, you may create users with password when you logged into phpMyAdmin, which is a bit more cumbersome.
 ___
 
 ## **6. Testing with Sample Data**
