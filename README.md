@@ -48,7 +48,7 @@ You need git and you need docker installed. Visual Studio code is a nice to have
 
 What is Git? Git is software used for distributed version control.
 
-What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal you type CLI. For Windows, when we say terminal we refer to "Git Bash".
+What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal what you type may by som people be called CLI. CLI usually refer to a set of commands designated to be written in a terminal. Hope you are not confused by separate interpretations of CLI. For Windows, when we (we on my GitHub pages) say terminal we refer to "Git Bash" and "Git Bash" only.
 
 For Windows there is Command Prompt and PowerShell. I still reccommend you to use "Git Bash" as terminal.
 
