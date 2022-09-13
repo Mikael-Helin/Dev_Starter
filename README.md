@@ -6,6 +6,11 @@
 
 The purpose with this repo, is to help you get started with web and database development with as little fuzz as possible. The purpose is to get you started without undestanding concepts in nitty gritty detail. This is not some educational page, so you may find these example too short or incomplete, which they are by purpose. If you find so, then you have to search for answers elsewhere, there purpose with these examples is nothing but about getting you **easily** started without configuration and installation hassle on your computer.
 
+1. Get quickly started.
+2. Minimal configuration and installation.
+3. Minimal examples.
+4. Not about teaching, you have to teach yourself after getting started.
+
 ### **0.2 What images do we currently have?**
 
 Scroll down to section 5 below and see.
