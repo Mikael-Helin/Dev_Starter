@@ -22,9 +22,11 @@ Scroll down to section 5 below to see.
 ### **0.4 What should you know before getting started?**
 
 1. Can use git.
-2. Know what is docker, not neccessarly know how to use it.
+2. Know what is docker, not neccessarly know how to use Docker.
 
-It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know that myself ;-))_. There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you initially need and it ends there.
+It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know that myself ;-))_.
+
+There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you initially need and it ends there.
 
 ___
 
@@ -33,9 +35,12 @@ ___
 Install
 1. Git and Bash
    1. Called Git Bash for Windows.
+   2. For Linux and Mac, Git and Bash are separate.
 2. Docker
-   1. Docker Desktop for Mac and Windows.
-3. Good to have: Visual Studio Code
+   1. It is Docker Desktop for Mac and Windows.
+   2. For Linux it is just Docker.
+3. Good to have: Visual Studio Code.
+   1. Runs on all computers.
 
 You need git and you need docker installed. Visual Studio code is a nice to have. Below are links with information on Windows installations. These pre-requestive installation should be straigtforward and easy for you to follow. The docker stuff is not self-evident, but this guide still helps you.
 
@@ -86,10 +91,13 @@ To check if your Docker Desktop works. Here is my super quick guide (which you m
 My guide:
 
 1. Open Docker Desktop from the Start menu.
-2. In git bash type
+2. Open a terminal (just in any random location, just open the terminal)
+   1. On Linux and Mac the terminal may also be called console
+   2. On Windows to open a terminal, it is best you open Git Bash even when there are other options
+   3. When you opened your terminal, type in there
 
 		docker run -d -p 80:80 docker/getting-started
-		
+
 3. Look in Docker Desktop, do you see the image "docker/getting-started:latest"? You should...
 4. Browse to localhost with your web browser. If you see a guide.... yeah, it works!
 
