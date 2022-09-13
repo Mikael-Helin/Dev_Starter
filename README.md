@@ -87,10 +87,8 @@ Visual Studio code is good to have.
 Link: https://code.visualstudio.com/
 
 There are 2 different ways you access and write your code together with Docker.
-1. You may mount a folder (with your code) as a volume outside the Docker container, or
-2. You allow VS code access the inside of the Docker container. For this you need to install an extension. Link: https://www.youtube.com/watch?v=8gUtN5j4QnY
-
-
+1. You mount a folder (the folder with your code) as a volume outside the Docker container, or then
+2. you allow VS code access the inside of the Docker container. For this you need to install an extension. Link: https://www.youtube.com/watch?v=8gUtN5j4QnY
 
 ___
 
@@ -103,24 +101,21 @@ To check if your Docker Desktop works. Here is my super quick guide (which you m
 My guide:
 
 1. Open Docker Desktop from the Start menu.
-2. Open a terminal (just in any random location, just open the terminal)
-   1. On Linux and Mac the terminal may also be called term, console, xterm etc.
-   2. On Windows to open a terminal, it is best you open Git Bash even when there are other options
-   3. When you opened your terminal, type in there
+2. Open a terminal (Don't know what is a terminal? Then read this guide from start). Open the terminal from any random location you like, then type
 
 
 		docker run -d -p 80:80 docker/getting-started
 
 
-3. Look in Docker Desktop, do you see the image "docker/getting-started:latest"? You should...
+3. Look in Docker Desktop, do you see the image "docker/getting-started:latest"? You should see it...
 4. Browse to localhost with your web browser. If you see a guide.... yeah, it works!
 
 Official guide:
 
-1. You may wish to instead follow the real guide "Exploring Docker Desktop with a quick example".\
+1. You may wish to instead follow the real guide "Exploring Docker Desktop with a quick example".
 2. Link: https://www.docker.com/blog/getting-started-with-docker-desktop/
 
-You may now skip to section 5.
+You may now skip to section 5.if you are on Linux and Mac. If you are on Windows you may skip to section 4.
 
 ## **3. Help, help.. I am on Linux! (optional)**
 
@@ -175,9 +170,9 @@ Host and guests have separate network. But assumed you want to enter guests from
 
 For example:
 
-* phpPgAdmin uses port 80 in the container but I chose port **82** on the host.
-* PHPMyAdmin uses port 80 in the container but I chose port **81** on the host.
-* node or nodemon has port 80 in its container and also port **80** in the host.
+* phpPgAdmin uses port 80 inside the container but I chose port **82** on the host.
+* PHPMyAdmin uses port 80 inside the container but I chose port **81** on the host.
+* node or nodemon has port 80 inside its container and also port **80** in the host.
 
 Notice how we avoid collissions on the host ports by having 1-1 mapping.. 1 port for 1 service only.
 
@@ -187,6 +182,8 @@ ___
 
 This is what we so far have
 
+Single image containers:
+
 * LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
 * PAMP server = PostgreSQL with Apache2 + PHP and phppgadmin on Debian Bullseye.\
@@ -195,6 +192,9 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
 * MongoDB on Ubuntu Focal.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB
+
+Multi image conatiners:
+
 * ERN development image. ERN = Express + React + NodeJS.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
 * Multiple PERN images with a ToDo sample. PERN = PostgreSQL + ERN.\
