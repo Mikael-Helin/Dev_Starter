@@ -52,7 +52,7 @@ What is a terminal? A terminal may also be called console or shell.  For Linux a
 
 For Windows there is Command Prompt and PowerShell. I still reccommend you to use "Git Bash" as terminal.
 
-Note that Git and Bash are completely separate programs, but they are called Git Bash on Windows. The Git Bash is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to use and install.
+Note that Git and Bash are completely separate programs, but they are called Git Bash on Windows. The Git Bash is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to use and worth to install, because you want as little mess and fuzz as possible.
 
 #### **1.1.1 How to install Git and Bash on Linux or Mac?**
 
@@ -64,7 +64,7 @@ Link: https://gitforwindows.org/
 
 ### **1.2 Docker Desktop**
 
-Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of the work is done by CLI anyway so to be without Docker Desktop is therefore not end of the world for Linux users.
+Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of the work is done by CLI anyway so to live without Docker Desktop is therefore not end of the world for Linux users.
 
 #### **1.2.1 Windows**
 
@@ -82,9 +82,15 @@ Link: https://docs.docker.com/desktop/install/linux-install/
 
 ### **1.3 Visual Studio Code**
 
-(ToDo) Visual Studio code is good to have... after we figured out how to use VS code with Docker I will update this Readme again.
+Visual Studio code is good to have.
 
 Link: https://code.visualstudio.com/
+
+There are 2 different ways you access and write your code together with Docker.
+1. You may mount a folder (with your code) as a volume outside the Docker container, or
+2. You allow VS code access the inside of the Docker container. For this you need to install an extension. Link: https://www.youtube.com/watch?v=8gUtN5j4QnY
+
+
 
 ___
 
