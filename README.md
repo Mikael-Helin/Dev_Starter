@@ -184,10 +184,10 @@ _For more instuctions, please proceed to respective container folders._
 
 ### **5.1. Images that we have**
 
-### **5.1.1. Future single image containers**
+#### **5.1.1. Single image containers**
 
 * LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_custom
 * PAMP server = PostgreSQL with Apache2 + PHP and phppgadmin on Debian Bullseye.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL
 * MSSQL on Linux.\
@@ -195,24 +195,26 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
 * MongoDB on Ubuntu Focal.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB
 
-### **5.1.2 Future multi image conatiners**
+#### **5.1.2 Multi image conatiners**
 
 Nothing yet.
 
-## **5.2. Images we might build in the future**
+### **5.2. Images we might build in the future**
 
-### **5.2.1 Single image containers**
+#### **5.2.1 Future single image containers**
 
 * ERN development image. ERN = Express + React + NodeJS.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
 * Redis
 * .NET SDK on Ubuntu.
-* R with Shiny with C++ and Fortran packages.
+* Rshiny with compiled libraries.
 * Python with Machine Learning.
 * Julia development environment.
 * Latex with compiling environment.
 
-### **5.1.2 Multi image conatiners**
+#### **5.1.2 future multi image conatiners**
 
+* LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin from official images.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_official
 * Multiple PERN images with a ToDo sample. PERN = PostgreSQL + ERN.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PERN

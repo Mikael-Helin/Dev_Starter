@@ -25,7 +25,7 @@ Cons:
 2. Cumbersome to change password, which you can for example do in phpMyAdmin.
 3. Harder to re-configure.
 
-Why not then take the custom MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the custom image too. If you want to use the custom image, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB
+Why not then take the custom MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the custom image too. If you want to use the custom image, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_custom
 
 ___
 
