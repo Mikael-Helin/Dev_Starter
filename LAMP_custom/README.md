@@ -39,7 +39,7 @@ Other details:
 
 **Web-GUI URL: http://localhost:81/phpmyadmin**
 
-Login into Web-GUI, phpMyAdmin, and login with user and pssword.
+Login into Web-GUI, phpMyAdmin, and login with user and password.
 ___
 
 ## **3. Pre-Requestives**

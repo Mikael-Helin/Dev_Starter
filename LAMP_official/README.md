@@ -38,7 +38,7 @@ Other details:
 
 **Web-GUI URL: http://localhost:81/phpmyadmin**
 
-Login into Web-GUI with user root and password mariadb.2022.
+Login into Web-GUI, phpMyAdmin, and login with user and password.
 ___
 
 ## **3. Pre-Requestives**
@@ -59,41 +59,18 @@ If you don't have the needed image, then the following command will download the
 
 But if you already have the needed image, then the same following command will just run the container from the already downloaded image.
 
-Windows:
+You can change the MariaDB root password in the docker-compose.yml file.
 
-        winpty docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
+All computers:
 
-Linux and Mac:
-
-        docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
+        docker-compose up
 
 ___
 
-## **5. Starting the  Services**
+## **5. Root Login**
 
-First you need to run the container (see section 4).
+When you login, set server as **mariadb** (not localhost) and then login with the given credentials.
 
-When the container is running, then you need to
-* enter the container and
-* inside the container start its services.
-
-This is how you do it:
-
-Windows:
-
-        winpty docker attach mariadb
-        /root/start.sh
-
-Linux and Mac:
-
-        docker attach mariadb
-        /root/start.sh
-
-Now try to surf to the url given above! You should see the PHPMyAdmin login. Login and do whatever you like to do.
-
-If any service crashes, then run those commands above again, those here in section 5.
 ___
 
 ## **6. Testing with Sample Data**

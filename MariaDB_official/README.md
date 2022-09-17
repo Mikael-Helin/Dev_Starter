@@ -1,4 +1,4 @@
-# **Running MariaDB and Web-GUI on Docker (using official images)**
+# **Running MariaDB on Docker (using official image)**
 
 The purpose of this example, is to let junior and aspiring developers get started with as little fuzz as possible.
 
