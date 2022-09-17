@@ -27,7 +27,7 @@ Cons:
 
 Why not then take official MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the official image and work with it but sometimes the official images may break and then you come back here, since you know here we have the image that works.
 
-If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
+If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_official
 
 ___
 
