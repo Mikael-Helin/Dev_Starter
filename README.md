@@ -182,7 +182,7 @@ ___
 
 _For more instuctions, please proceed to respective container folders._
 
-### **5.1. Images that we have**
+### **5.1. Images that we currently have**
 
 #### **5.1.1. Single image containers**
 
@@ -219,9 +219,7 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
 * Julia development environment.
 * Latex with compiling environment.
 
-#### **5.1.2 future multi image conatiners**
+#### **5.1.2 Future multi image conatiners**
 
-* (Official) LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin from official images.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_official
 * Multiple PERN images with a ToDo sample. PERN = PostgreSQL + ERN.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PERN

@@ -1,13 +1,23 @@
-# **Running PostgeSQL and Web-GUI on Docker**
-
-## **1. What is this?**
-
-It is a Debian Linux image with PostgreSQL configured. This image also has a Web-GUI client to access PostgreSQL, so you will not need to bloat your computer with installing another client.
-
-Why not take then official postgres image? You are free to use the official image and work with it but then it is also not configured.
+# **Running PostgeSQL and Web-GUI on Docker (custom image)**
 
 The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
 
+## **1. What is this?**
+
+It is a Debian Linux image with PostgreSQL configured. This image also has a Web-GUI client, phpPgAdmin, to access PostgreSQL, so you will not need to bloat your computer by installing another client.
+
+**Pros:**
+
+    Everything is in one image that works.
+    Less to configure.
+
+**Cons:**
+
+    It is not an official image.
+    Cumbersome to change root password, which you may for example do in phpMyAdmin.
+    Harder to re-configure.
+
+This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case some MySQL/MariaDB client.
 ___
 
 ## **2. How To Acess?**

@@ -7,7 +7,7 @@ The purpose with this image, is to let junior and aspiring developers get starte
 It is the LAMP stack on a single image. The pros and cons compared to a build from official images are the following:
 
 **Pros:**
-1. Everything is in one Image that works.
+1. Everything is in one image that works.
 2. Less to configure.
 
 **Cons:**
