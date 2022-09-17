@@ -1,6 +1,6 @@
 # **Dev Starter**
 
-## **0. Purpose (optinal)**
+## **0. Purpose (optional)**
 
 ### **0.1 The purpose is to get you quickly started**
 
@@ -186,7 +186,7 @@ _For more instuctions, please proceed to respective container folders._
 
 #### **5.1.1. Single image containers**
 
-* (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phppgadmin on Debian Bullseye.
+* (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin on Debian Bullseye.
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
 * (Official) PostgreSQL\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_official
@@ -201,7 +201,10 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
 
 #### **5.1.2 Multi image conatiners**
 
-Nothing yet.
+* (Official) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_official
+* (Official) LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
 
 ### **5.2. Images we might build in the future**
 
