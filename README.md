@@ -186,10 +186,14 @@ _For more instuctions, please proceed to respective container folders._
 
 #### **5.1.1. Single image containers**
 
-* (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_custom
 * (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phppgadmin on Debian Bullseye.
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_custom
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
+* (Official) PostgreSQL\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_official
+* (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom
+* (Official) MySQL\
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MySQL_official
 * (Official) MSSQL on Linux.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
 * (Official) MongoDB on Ubuntu Focal.\
