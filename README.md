@@ -13,11 +13,11 @@ The purpose with this repo, is to help you get started with web, database and so
 
 ### **0.2 What images do we currently have?**
 
-Scroll down to section 5 below to see.
+Scroll down to section 4 below to see.
 
 ### **0.3 What images may we have in the future?**
 
-Scroll down to section 5 below to see.
+Scroll down to section 4 below to see.
 
 ### **0.4 What should you know before getting started?**
 
@@ -132,10 +132,6 @@ Official guide:
 
 1. You may wish to instead follow the real guide "Exploring Docker Desktop with a quick example".
 2. Link: https://www.docker.com/blog/getting-started-with-docker-desktop/
-
-If you are on Linux or Mac you may skip to section 5.
-
-If you are on Windows you may skip to section 4.
 
 ## **3. FAQ (optional)**
 
