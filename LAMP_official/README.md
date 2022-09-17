@@ -4,7 +4,7 @@ The purpose with this image, is to let junior and aspiring developers get starte
 
 ## **1. What is this?**
 
-It is the LAMP stack built from multiple images.
+It is the LAMP stack built from multiple images. The pros and cons compared to my custom made image are following:
 
 Pros:
 1. Is made from official images.
