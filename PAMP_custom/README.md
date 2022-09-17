@@ -8,14 +8,14 @@ It is a Debian Linux image with PostgreSQL configured. This image also has a Web
 
 **Pros:**
 
-    Everything is in one image that works.
-    Less to configure.
+1. Everything is in one image that works.
+2. Less to configure.
 
 **Cons:**
 
-    It is not an official image.
-    Cumbersome to change root password, which you may for example do in phpMyAdmin.
-    Harder to re-configure.
+1. It is not an official image.
+2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
+3. Harder to re-configure.
 
 This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client.
 ___
