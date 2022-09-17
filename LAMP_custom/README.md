@@ -1,4 +1,4 @@
-# **Running MariaDB and Web-GUI on Docker (using custom image)**
+# **Running MariaDB and Web-GUI on Docker (custom image)**
 
 The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
 

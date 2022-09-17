@@ -14,10 +14,10 @@ It is a Debian Linux image with PostgreSQL configured. This image also has a Web
 **Cons:**
 
 1. It is not an official image.
-2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
+2. Cumbersome to change root password, which you may for example do in phpPgAdmin.
 3. Harder to re-configure.
 
-This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client.
+This is a Debian Linux image with PostgreSQL configured. This image also has a Web-GUI client, phpPgAdmin, to access PostgreSQL, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client.
 ___
 
 ## **2. How To Acess?**
@@ -34,12 +34,12 @@ Other details:
 
 **port: 5432**
 
-**Web-GUI URL: http://127.0.0.1:82/phppgadmin**
+**Web-GUI URL: http://localhost:82/phppgadmin**
 ___
 
 ## **3. Pre-Requestives**
 
-Have Bash installed on your system.
+Have a terminal installed on your system.
 
 Have Docker or Docker Desktop installed on your system.
 

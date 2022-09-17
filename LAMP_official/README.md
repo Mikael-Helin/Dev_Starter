@@ -87,4 +87,4 @@ When you have logged in into phpMyAdmin:
 * click on browse and upload **food.sql**.
 * Click the Go-button.
   
-And now you have uploaded some sample data. Continue to do whatever exersice you like. Pherhaps try to export to different format, delete the database and then import?
+And now you have uploaded some sample data. Continue to do whatever exersice you like. Pherhaps try to export to different format, delete the database and then import the exported database?
