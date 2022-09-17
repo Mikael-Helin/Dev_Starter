@@ -20,7 +20,7 @@ It is a Debian Linux image with PostgreSQL configured. This image also has a Web
 This is a Debian Linux image with PostgreSQL configured. This image also has a Web-GUI client, phpPgAdmin, to access PostgreSQL, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client.
 ___
 
-## **2. How To Acess?**
+## **2. How to Acess?**
 
 Database credentials:
 

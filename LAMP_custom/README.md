@@ -23,7 +23,7 @@ If you want to use a build from the offical images, then have a look here https:
 
 ___
 
-## **2. How To Acess?**
+## **2. How to Acess?**
 
 Database credentials:
 

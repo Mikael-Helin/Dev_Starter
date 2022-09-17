@@ -32,7 +32,7 @@ Cons:
 Why not then take the custom PostgreSQL image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the custom image too. If you want to use the custom image, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_custom
 ___
 
-## **2. How To Acess?**
+## **2. How to Acess?**
 
 Database credentials:
 

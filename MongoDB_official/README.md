@@ -1,10 +1,14 @@
-# **Running MongoDB on Docker**
+# **Running MongoDB on Docker (official image)**
 
-If you want a GUI client, then MongoDB Compass is suggested.
+The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
+
+## **1. What is this?**
+
+It is the official Docker image for MongoDB. It has no GUI client, so if you want a GUI client, then MongoDB Compass is suggested.
 
 Link: https://www.mongodb.com/products/compass
 
-## **1. INFO**
+## **2. How to Access?**
 
 Database credentials:
 
@@ -17,10 +21,19 @@ Other details:
 **host: localhost**
 
 **mongodb port: 27017**
+___
+
+## **3. Pre-Requestives**
+
+Have a terminal installed on your system.
+
+Have Docker or Docker Desktop installed on your system.
+
+See section 1-2 in https://github.com/Mikael-Helin/Dev_Starter
 
 ___
 
-## 2. Run MongoDB
+## 3. Run This Container
 
 Open a terminal and type
 

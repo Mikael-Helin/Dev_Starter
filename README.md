@@ -9,7 +9,7 @@
 3. Minimal examples.
 4. Not about educating. You have to teach yourself after getting started.
 
-The purpose with this repo, is to help you get started with web and database development with as little fuzz as possible. The purpose is to get you started without undestanding concepts in nitty gritty detail. This is not some educational page, so you may find these example too short or incomplete, which they are by purpose. If you find so, then you have to search for answers elsewhere, there purpose with these examples is nothing but about getting you **easily** started without configuration and installation hassle on your computer.
+The purpose with this repo, is to help you get started with web and database development with as little fuzz as possible. The purpose is to get you started without undestanding concepts in detail. This is not some educational page, so you may find examples too short or incomplete, which they are by purpose.
 
 ### **0.2 What images do we currently have?**
 
@@ -24,9 +24,11 @@ Scroll down to section 5 below to see.
 1. Can use git.
 2. Know what is docker, not neccessarly know how to use Docker.
 
-It is assumed, you have some knowledge what is git and docker, however you do not really fully need to know how to use docker _(and honestly I don't even know that myself ;-))_.
+It is assumed, you have some knowledge what is Git and Docker, however you do not really fully need to know how to use Docker 
 
-There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you initially need and it ends there.
+_(and honestly I don't even know that myself Docker ;-))_.
+
+There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you initially need and the help ends there.
 
 ___
 
@@ -42,13 +44,13 @@ Install
 3. Good to have: Visual Studio Code.
    1. Runs on all computers.
 
-You need git and you need docker installed. Visual Studio code is a nice to have. Below are links with information on Windows installations. These pre-requestive installation should be straigtforward and easy for you to follow. The docker stuff is not self-evident, but this guide still helps you.
+You need Git and you need Docker installed. Visual Studio code is a nice to have. Below are links with information on installations on Windows. These pre-requestive installation should be straigtforward and easy for you to follow. The Docker stuff is not self-evident, but this guide still helps you get forward.
 
 ### **1.1 Git and Bash**
 
 What is Git? Git is software used for distributed version control.
 
-What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal what you type may by som people be called CLI. CLI usually refer to a set of commands designated to be written in a terminal. Hope you are not confused by separate interpretations of CLI. For Windows, when we (we on my GitHub pages) say terminal we refer to "Git Bash" and "Git Bash" only.
+What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal what you type may by som people be called CLI. CLI usually refer to a set of commands designated to be written in a terminal. Hope you are not confused by separate interpretations of CLI. Here in these document when we say terminal we most refer to Bash.
 
 For Windows there is Command Prompt and PowerShell. I still reccommend you to use "Git Bash" as terminal.
 
@@ -56,7 +58,9 @@ Note that Git and Bash are completely separate programs, but they are called Git
 
 #### **1.1.1 How to install Git and Bash on Linux or Mac?**
 
-Search online.
+Bash is already installed by default on your system.
+
+To install Git, search online.
 
 #### **1.1.2 How to install Git and Bash on Windows?**
 
@@ -64,7 +68,7 @@ Link: https://gitforwindows.org/
 
 ### **1.2 Docker Desktop**
 
-Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of the work is done by CLI anyway so to live without Docker Desktop is therefore not end of the world for Linux users.
+Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of Docker is used by CLI anyway, so lacking Docker Desktop is not fundamental.
 
 #### **1.2.1 Windows**
 
@@ -76,7 +80,7 @@ _Troubleshoot: When I tried to install Docker Desktop on Windows 10 Pro then I h
 
 Link: https://docs.docker.com/desktop/install/mac-install/
 
-#### **1.2.2 Linux**
+#### **1.2.2 Linux, Docker only**
 
 Link: https://docs.docker.com/desktop/install/linux-install/
 
@@ -90,6 +94,7 @@ There are 2 different ways you access and write your code together with Docker.
 1. You mount a folder (the folder with your code) as a volume outside the Docker container, or then
 2. you allow VS code access the inside of the Docker container. For this you need to install an extension. Link: https://www.youtube.com/watch?v=8gUtN5j4QnY
 
+Whichever means you access the code, it is meant that the software inside the container also has access to your code. For example, you do not have Python installed on your machine but you do have Python installed in a container, which in turn runs your code wherever you have chosen to place your code.
 ___
 
 ## **2. Test Your Docker Installation (optional)**

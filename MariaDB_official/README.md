@@ -29,7 +29,7 @@ Why not then take the custom MariaDB image? Using the offical images is actually
 
 ___
 
-## **2. How To Acess?**
+## **2. How to Acess?**
 
 Database credentials:
 
