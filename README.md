@@ -175,18 +175,12 @@ _For more instuctions, please proceed to respective container folders._
 
 #### **4.1.1. Single image containers**
 
-* (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin on Debian Bullseye.
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
-* (Official) PostgreSQL\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_official
-* (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom
-* (Official) MySQL\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MySQL_official
-* (Official) MSSQL on Linux.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
-* (Official) MongoDB on Ubuntu Focal.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
+* (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin on Debian Bullseye. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
+* (Official) PostgreSQL. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_official
+* (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom
+* (Official) MySQL. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MySQL_official
+* (Official) MSSQL on Linux. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
+* (Official) MongoDB on Ubuntu Focal. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
 
 #### **4.1.2 Multi image conatiners**
 
