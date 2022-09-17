@@ -12,7 +12,7 @@ Pros:
 Cons:
 1. May break after updates when images don't match anymore.
 
-These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer with installing yet another client.
+These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client.
 
 ## **1.1. Using Custom Image**
 
@@ -66,16 +66,18 @@ If you don't have the needed images, then the following command will download th
 
 But if you already have the needed images, then the same following command will just run the container from the already downloaded images.
 
-kkk
+If you want, you can choose another root password, it is up to you.
 
 Windows:
 
         winpty docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
+        -e MARIADB_ROOT_PASSWORD=mariadb.2022 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
 
 Linux and Mac:
 
         docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
+        -e MARIADB_ROOT_PASSWORD=mariadb.2022 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
 
 ___

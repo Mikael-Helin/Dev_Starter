@@ -189,11 +189,11 @@ _For more instuctions, please proceed to respective container folders._
 * (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_custom
 * (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phppgadmin on Debian Bullseye.
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_custom
 * (Official) MSSQL on Linux.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
 * (Official) MongoDB on Ubuntu Focal.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB
+Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
 
 #### **5.1.2 Multi image conatiners**
 
