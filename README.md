@@ -106,7 +106,7 @@ To check if your Docker Desktop works. Here is my super quick guide (which you m
 My guide:
 
 1. Open Docker Desktop from the Start menu.
-2. Open a terminal (Don't know what is a terminal? Then read this guide from start). Open the terminal from any random location you like, then type
+2. Open a terminal from any random location you like (don't know what is a terminal? Then read this guide from start), then type
 
 
 		docker run -d -p 80:80 docker/getting-started
@@ -120,9 +120,11 @@ Official guide:
 1. You may wish to instead follow the real guide "Exploring Docker Desktop with a quick example".
 2. Link: https://www.docker.com/blog/getting-started-with-docker-desktop/
 
-You may now skip to section 5.if you are on Linux and Mac. If you are on Windows you may skip to section 4.
+If you are on Linux or Mac you may skip to section 5.
 
-## **3. Help, help.. I am on Linux! (optional)**
+If you are on Windows you may skip to section 4.
+
+## **3. You have no Docker Desktop (optional)**
 
 So far, what I have seen, Docker Desktop makes it easy to start, stop and easy to list and delete containers and images by clicking with the mouse here and there.
 
@@ -135,6 +137,8 @@ Examples to study elsewhere:
 		docker ps
 		docker start ...
 		docker stop ...
+
+When you understood those basic commands, then you can use the instead of Docker Desktop.
 
 ___
 
@@ -152,26 +156,15 @@ Linux and Mac:
 
 		docker <some stuff>
 
-If you forget to type windpty, docker will highly likely explain that to you in its error message.
+If you forget to type winppty, docker will highly likely explain that to you in its error message.
 
 ### **4.2 Run multiple containers?**
 
-There are other ways to run multiple containers, but here we just keep it simple and there aren't many continers we need to run.
+There are other ways to run multiple containers, but here we just keep it simple and there aren't many continers we need to run. No swarms or clusters. When you need tens, hundreds or you name it number of thousands of containers, then there are other better approaches to run swarms or clusters than in this document.
 
-1. Open a new terminal for each container.
-2. Maybe(?) you should run each docker image in **separate terminal**.
-3. From each host terminal enter into the container terminal to start services... when if needed.
-   1. Postgres does not start by itself, neither MySQL.
-   2. MSSQL starts by itself, so you do not need to enter the container terminal to start MSSQL as service.
-4. **Remark:** If you exit the container terminal then the container stops... a stopped container has no services... so you cannot exit if you want to keep run services... therefore you need multiple host terminals as told in point 2.
+### **4.3 You cannot start some service or container?**
 
-Just keeping it simlpe so far. No swarms or clusters, not even innocent ampersands. When you need tens, hundreds or you name it number of thousands of containers, then there are other better approaches.
-
-### **4.3 I cannot start service or the container**
-
-Host and guests have separate network. But assumed you want to enter guests from host as well guests...
-
-... Maybe there are multiple containers using the same host port? You can only have 1 service for each port on your host.
+Host and guests have separate network. Now assuming you want to enter guests from other guests and the host... but it does not work, then maybe there are multiple containers using the same host port? You can only have 1 service for each port on your host.
 
 For example:
 
