@@ -93,7 +93,7 @@ Linux and Mac:
         docker attach mariadb
         /root/start.sh
 
-Now try to surf to the url given above! You should see the phpMyAdmin login. Login and do whatever you like to do. Maybe you want to change the root password? Add and remove users?
+Now try to surf to the url given above! You should see the phpPgAdmin login. Login and do whatever you like to do. Maybe you want to change the root password? Add and remove users?
 
 If any service crashes, then run those commands above again.
 ___

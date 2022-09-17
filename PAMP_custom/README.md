@@ -87,25 +87,16 @@ Linux and Mac:
         docker attach postgres
         /root/start.sh
 
+Now try to surf to the url given above! You should see the phpPgAdmin login. Login and do whatever you like to do. Maybe you want to change the root password? Add and remove users?
+
+If any service crashes, then run those commands above again.
 ___
 
-## **6. Access the Services**
+## **6. Testing with Sample Data**
 
-(*The information needed in this section you find in section 2.*)
+You should have completed sections 3-5.
 
-Is everything up and runnig? You can test! Now try to surf to the url given above! You should see the PHPMyAdmin login... if you do then it works.
-
-Login and do whatever you like to do.
-
-If any service crashes, then run those commands above again, those in section 5.
-
-___
-
-## **7. Testing with Sample Data**
-
-You should have completed sections 3-6.
-
-When you have logged in into PHPMyAdmin:
+When you have logged in into phpPgAdmin:
 
 * Click the **PostgreSQL** under "Servers",
 * enter the credentials from section 2.
