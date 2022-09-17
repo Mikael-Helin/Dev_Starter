@@ -24,17 +24,17 @@ ___
 
 Database credentials:
 
-***user: postgres***
+**user: postgres**
 
-***password: postgres.2022***
+**password: postgres.2022**
 
 Other details:
 
-***host: localhost***
+**host: localhost**
 
-***port: 5432***
+**port: 5432**
 
-***URL: http://127.0.0.1:82/phppgadmin***
+**Web-GUI URL: http://127.0.0.1:82/phppgadmin**
 ___
 
 ## **3. Pre-Requestives**
