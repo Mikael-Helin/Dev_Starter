@@ -175,26 +175,23 @@ _For more instuctions, please proceed to respective container folders._
 
 #### **4.1.1. Single image containers**
 
-* (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin on Debian Bullseye. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
+* (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin on Debian Bullseye. https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
 * (Official) PostgreSQL. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PostgreSQL_official
-* (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom
-* (Official) MySQL. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MySQL_official
-* (Official) MSSQL on Linux. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
-* (Official) MongoDB on Ubuntu Focal. Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
+* (Custom) LAMP server = MariaDB with Apache2 + PHP and PHPMyAdmin on Debian Bullseye. https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom
+* (Official) MySQL. https://github.com/Mikael-Helin/Dev_Starter/tree/main/MySQL_official
+* (Official) MSSQL on Linux. https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
+* (Official) MongoDB on Ubuntu Focal. https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
 
 #### **4.1.2 Multi image conatiners**
 
-* (Official) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_official
-* (Official) LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
+* (Official) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin. https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_official
+* (Official) LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin. https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
 
 ### **4.2. Images we might build in the future**
 
 #### **4.2.1 Future single image containers**
 
-* ERN development image. ERN = Express + React + NodeJS.\
-Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
+* ERN development image. ERN = Express + React + NodeJS. https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
 * Redis
 * .NET SDK on Ubuntu.
 * Rshiny with compiled libraries.
