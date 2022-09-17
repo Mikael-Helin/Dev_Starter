@@ -1,4 +1,4 @@
-# **Running MariaDB and Web-GUI on Docker (using custom images)**
+# **Running MariaDB and Web-GUI on Docker (official images)**
 
 The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
 
@@ -14,7 +14,8 @@ Pros:
 Cons:
 1. May break after updates when scripts don't match images anymore.
 
-These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client, in this case some MySQL/MariaDB client.
+These images have MariaDB and phpMyAdmin as Web-GUI, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some MySQL/MariaDB client.
+
 
 ## **1.1. Using Custom Image**
 
@@ -36,7 +37,7 @@ Other details:
 
 **database port: 3306**
 
-**Web-GUI URL: http://localhost:81/phpmyadmin**
+**Web-GUI URL: http://localhost:81**
 
 Login into Web-GUI, phpMyAdmin, and login with user and password.
 ___
@@ -59,7 +60,7 @@ If you don't have the needed image, then the following command will download the
 
 But if you already have the needed image, then the same following command will just run the container from the already downloaded image.
 
-You can change the MariaDB root password in the docker-compose.yml file.
+You can change the MariaDB root password in the docker-compose.yml file. Open a terminal in the same folder where you have the docker-compose.yml file. Then type:
 
 All computers:
 
