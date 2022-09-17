@@ -1,14 +1,12 @@
 # **Running PostgeSQL and Web-GUI on Docker (custom image)**
 
-The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
-
 ## **1. What is this?**
 
-It is a Debian Linux image with PostgreSQL configured. This image also has a Web-GUI client, phpPgAdmin, to access PostgreSQL, so you will not need to bloat your computer by installing another client.
+This is a Debian Linux image with PostgreSQL installed and configured. This image also has a Web-GUI client, phpPgAdmin, to access PostgreSQL, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client. Further, Apache2 and PHP are installed.
 
 **Pros:**
 
-1. Everything is in one image that works.
+1. Everything is in one image that works out of the box.
 2. Less to configure.
 
 **Cons:**
@@ -17,7 +15,10 @@ It is a Debian Linux image with PostgreSQL configured. This image also has a Web
 2. Cumbersome to change root password, which you may for example do in phpPgAdmin.
 3. Harder to re-configure.
 
-This is a Debian Linux image with PostgreSQL configured. This image also has a Web-GUI client, phpPgAdmin, to access PostgreSQL, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client.
+### **1.1. PAMP**
+
+Myself, I thought you use this image for postgreSQL only. If you want web content for this image, then you can place the web content in the folder **/var/www/html** inside the container or then you map the folder **/var/www/html** to some folder on the host.
+
 ___
 
 ## **2. How to Acess?**
@@ -35,6 +36,9 @@ Other details:
 **port: 5432**
 
 **Web-GUI URL: http://localhost:82/phppgadmin**
+
+**Web content: http://localhost:82**
+
 ___
 
 ## **3. Pre-Requestives**
