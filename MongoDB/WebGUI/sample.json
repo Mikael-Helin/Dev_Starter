@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 1,
+    "project": "Green",
+    "positions": [
+      "Farmer",
+      "Frontend Developer",
+      "Database Administrator",
+      "Translator"
+    ]
+  },
+  {
+    "_id": 2,
+    "project": "VR",
+    "positions": [
+      "HR Expert",
+      "Frontend Developer",
+      "Backend Developer",
+      "Azure Specialist"
+    ]
+  }
+]
