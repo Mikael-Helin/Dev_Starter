@@ -1,19 +1,20 @@
-# **Running MariaDB and Web-GUI on Docker (using custom image)**
+# **Running MariaDB and Web-GUI on Docker (using custom images)**
 
 The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
 
 ## **1. What is this?**
 
+It is the LAMP stack built from multiple images.
+
 Pros:
-1. Everything in one Image that works.
-2. Less to configure.
+1. Is made from official images.
+2. Your chosen root password is sent as an environment variable.
+3. Takes less space.
 
 Cons:
-1. Is not official image.
-2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
-3. Harder to re-configure.
+1. May break after updates when images don't match anymore.
 
-It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer with installing yet another client.
+These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client, in this case, a MySQL/MariaDB client.
 
 ## **1.1. Using Official Images**
 
@@ -23,7 +24,7 @@ Pros:
 3. Takes less space.
 
 Cons:
-1. May break after updates when images don't match anymore.
+1. 
 
 Why not then take official MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the official image and work with it but sometimes the official images may break and then you come back here, since you know here we have the image that works.
 
