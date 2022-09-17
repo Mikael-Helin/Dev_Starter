@@ -4,28 +4,30 @@ The purpose with this image, is to let junior and aspiring developers get starte
 
 ## **1. What is this?**
 
+It is the LAMP stack on a single image.
+
 Pros:
-1. Everything in one Image that works.
+1. Everything is in one Image that works.
 2. Less to configure.
 
 Cons:
-1. Is not official image.
+1. It is not an official image.
 2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
 3. Harder to re-configure.
 
-It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer with installing yet another client.
+It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer by installing yet another client.
 
 ## **1.1. Using Official Images**
 
 Pros:
 1. Are official images.
-2. Passwords are sent in as environment variables.
+2. Your choice of passwords are sent in as environment variables.
 3. Takes less space.
 
 Cons:
 1. May break after updates when images don't match anymore.
 
-Why not then take official MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the official image and work with it but sometimes the official images may break and then you come back here, since you know here we have the image that works.
+Why not then take official MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the official image and work with it but sometimes the official images may break and then you come back here, since you know here we have the image that works out of the box.
 
 If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
 
@@ -85,6 +87,7 @@ ___
 First you need to run the container (see section 4).
 
 When the container is running, then you need to
+
 * enter the container and
 * inside the container start its services.
 
