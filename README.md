@@ -53,8 +53,6 @@ What is Git? Git is software used for distributed version control.
 
 What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal what you type may by some people be called CLI (Command Line Interface). CLI usually refer to a set of commands designated to be written in a terminal. Hope you are not confused by separate interpretations of CLI. Here in these repo when we say terminal we mostly refer to Bash.
 
-
-
 Note that Git and Bash are completely separate programs, but they are called "Git Bash" on Windows. For Windows there is Command Prompt and PowerShell. I still reccommend you to use Git Bash as terminal for Windows. The Git Bash for Windows is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to use and worth to install, simply because you want as little mess and fuzz as possible.
 
 #### **1.1.1 How to install Git and Bash on Linux or Mac?**
@@ -69,7 +67,21 @@ Link: https://gitforwindows.org/
 
 ### **1.2 Docker Desktop**
 
-Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of Docker is used by CLI anyway, so lacking Docker Desktop is not fundamental.
+Docker Desktop exists for Windows and Mac, but not for Linux, but if you know how to use Linux, it might be alright to live without Docker Desktop for Linux as well(?). Most of Docker is used by CLI anyway, so lacking Docker Desktop is not some fundamental lack.
+
+So far, what I have seen, Docker Desktop makes it easy to start, stop and easy to list and delete containers and images by clicking with the mouse here and there.
+
+If you are on Linux, you might try to figure out how to do these commands on CLI?
+
+Examples to study elsewhere:
+
+		docker image ls
+		docker images
+		docker ps
+		docker start ...
+		docker stop ...
+
+When you understood those basic commands, then you can use the instead of Docker Desktop.
 
 #### **1.2.1 Windows**
 
@@ -125,27 +137,9 @@ If you are on Linux or Mac you may skip to section 5.
 
 If you are on Windows you may skip to section 4.
 
-## **3. You have no Docker Desktop (optional)**
+## **3. FAQ (optional)**
 
-So far, what I have seen, Docker Desktop makes it easy to start, stop and easy to list and delete containers and images by clicking with the mouse here and there.
-
-If you are on Linux, you might try to figure out how to do these commands on CLI?
-
-Examples to study elsewhere:
-
-		docker image ls
-		docker images
-		docker ps
-		docker start ...
-		docker stop ...
-
-When you understood those basic commands, then you can use the instead of Docker Desktop.
-
-___
-
-## **4. FAQ (optional)**
-
-### **4.1 Winpty??**
+### **3.1 Winpty??**
 
 Sometimes on Windows you need to type winpty before docker, like this:
 
@@ -159,11 +153,11 @@ Linux and Mac:
 
 If you forget to type winppty, docker will highly likely explain that to you in its error message.
 
-### **4.2 Run multiple containers?**
+### **3.2 Run multiple containers?**
 
 There are other ways to run multiple containers, but here we just keep it simple and there aren't many continers we need to run. No swarms or clusters. When you need tens, hundreds or you name it number of thousands of containers, then there are other better approaches to run swarms or clusters than in this document.
 
-### **4.3 You cannot start some service or container?**
+### **3.3 You cannot start some service or container?**
 
 Host and guests have separate network. Now assuming you want to enter guests from other guests and the host... but it does not work, then maybe there are multiple containers using the same host port? You can only have 1 service for each port on your host.
 
@@ -177,13 +171,13 @@ Notice how we avoid collissions on the host ports by having 1-1 mapping.. 1 port
 
 ___
 
-## **5. Current Dev Containers**
+## **4. Current Dev Containers**
 
 _For more instuctions, please proceed to respective container folders._
 
-### **5.1. Images that we currently have**
+### **4.1. Images that we currently have**
 
-#### **5.1.1. Single image containers**
+#### **4.1.1. Single image containers**
 
 * (Custom) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin on Debian Bullseye.
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
@@ -198,16 +192,16 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
 * (Official) MongoDB on Ubuntu Focal.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
 
-#### **5.1.2 Multi image conatiners**
+#### **4.1.2 Multi image conatiners**
 
 * (Official) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_official
 * (Official) LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
 
-### **5.2. Images we might build in the future**
+### **4.2. Images we might build in the future**
 
-#### **5.2.1 Future single image containers**
+#### **4.2.1 Future single image containers**
 
 * ERN development image. ERN = Express + React + NodeJS.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
@@ -218,7 +212,7 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/ERN
 * Julia development environment.
 * Latex with compiling environment.
 
-#### **5.1.2 Future multi image conatiners**
+#### **4.1.2 Future multi image conatiners**
 
 * Multiple PERN images with a ToDo sample. PERN = PostgreSQL + ERN.\
 Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PERN
