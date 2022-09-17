@@ -15,7 +15,7 @@ It is the LAMP stack on a single image. The pros and cons compared to a build fr
 2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
 3. Harder to re-configure.
 
-This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case some MySQL/MariaDB client.
+This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some MySQL/MariaDB client.
 
 ## **1.1. Using Official Images**
 

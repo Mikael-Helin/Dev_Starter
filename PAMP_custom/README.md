@@ -17,7 +17,7 @@ It is a Debian Linux image with PostgreSQL configured. This image also has a Web
     Cumbersome to change root password, which you may for example do in phpMyAdmin.
     Harder to re-configure.
 
-This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case some MySQL/MariaDB client.
+This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some PostgreSQL client.
 ___
 
 ## **2. How To Acess?**
