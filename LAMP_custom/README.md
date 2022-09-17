@@ -49,12 +49,12 @@ Other details:
 
 **Web-GUI URL: http://localhost:81/phpmyadmin**
 
-Login into Web-GUI with user root and password mariadb.2022.
+Login into Web-GUI (phpMyAdmin) and login with user and pssword.
 ___
 
 ## **3. Pre-Requestives**
 
-Have Bash installed on your system.
+Have a terminal installed on your system.
 
 Have Docker or Docker Desktop installed on your system.
 
@@ -103,9 +103,9 @@ Linux and Mac:
         docker attach mariadb
         /root/start.sh
 
-Now try to surf to the url given above! You should see the PHPMyAdmin login. Login and do whatever you like to do.
+Now try to surf to the url given above! You should see the phpMyAdmin login. Login and do whatever you like to do. Maybe you want to change the root password?
 
-If any service crashes, then run those commands above again, those here in section 5.
+If any service crashes, then run those commands above again.
 ___
 
 ## **6. Testing with Sample Data**
@@ -121,4 +121,4 @@ When you have logged in into phpMyAdmin:
 * click on browse and upload **food.sql**.
 * Click the Go-button.
   
-And now you have uploaded some sample data. Continue to do whatever exersice you like. Pherhaps try to export to different format, delete the database and then import?
+And now you have uploaded some sample data. Continue to do whatever exersice you like to do. Pherhaps try to export to different format, delete the database and then import the exported database?
