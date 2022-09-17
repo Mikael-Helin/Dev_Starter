@@ -1,6 +1,6 @@
 # **Dev Starter**
 
-## **0. Purpose (optional)**
+## **0. Purpose**
 
 ### **0.1 The purpose is to get you quickly started**
 
@@ -9,7 +9,7 @@
 3. Minimal examples.
 4. Not about educating. You have to teach yourself after getting started.
 
-The purpose with this repo, is to help you get started with web and database development with as little fuzz as possible. The purpose is to get you started without undestanding concepts in detail. This is not some educational page, so you may find examples too short or incomplete, which they are by purpose.
+The purpose with this repo, is to help you get started with web, database and software development with as little fuzz as possible. The purpose is to get you started without undestanding several concepts in detail. This is not some educational page, so you may find examples too short or incomplete, which they are by purpose.
 
 ### **0.2 What images do we currently have?**
 
@@ -21,12 +21,12 @@ Scroll down to section 5 below to see.
 
 ### **0.4 What should you know before getting started?**
 
-1. Can use git.
-2. Know what is docker, not neccessarly know how to use Docker.
+1. Know how to use Git.
+2. Know what is Docker but not neccessarly know how to use Docker.
 
 It is assumed, you have some knowledge what is Git and Docker, however you do not really fully need to know how to use Docker 
 
-_(and honestly I don't even know that myself Docker ;-))_.
+_(Honestly I don't even know myself how to use Docker ;-))_.
 
 There are plenty of Docker tutorials on YouTube, here I just want to get you up started, not primarly teaching you new stuff. So we only focus on what you initially need and the help ends there.
 
@@ -34,7 +34,8 @@ ___
 
 ## **1. Pre-Requestives and Installations**
 
-Install
+Installations
+
 1. Git and Bash
    1. Called Git Bash for Windows.
    2. For Linux and Mac, Git and Bash are separate.
@@ -44,17 +45,17 @@ Install
 3. Good to have: Visual Studio Code.
    1. Runs on all computers.
 
-You need Git and you need Docker installed. Visual Studio code is a nice to have. Below are links with information on installations on Windows. These pre-requestive installation should be straigtforward and easy for you to follow. The Docker stuff is not self-evident, but this guide still helps you get forward.
+You need Git and you need Docker installed. Visual Studio code is a nice to have. Below are links with information on installations on Windows. These pre-requestive installation should be straigtforward and easy for you to complete. The Docker stuff in this repo is not always self-evident, but this guide still helps you get forward.
 
 ### **1.1 Git and Bash**
 
 What is Git? Git is software used for distributed version control.
 
-What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal what you type may by som people be called CLI. CLI usually refer to a set of commands designated to be written in a terminal. Hope you are not confused by separate interpretations of CLI. Here in these document when we say terminal we most refer to Bash.
+What is a terminal? A terminal may also be called console or shell.  For Linux and Mac when we say terminal we refer to any termial or console. In the terminal what you type may by some people be called CLI (Command Line Interface). CLI usually refer to a set of commands designated to be written in a terminal. Hope you are not confused by separate interpretations of CLI. Here in these repo when we say terminal we mostly refer to Bash.
 
-For Windows there is Command Prompt and PowerShell. I still reccommend you to use "Git Bash" as terminal.
 
-Note that Git and Bash are completely separate programs, but they are called Git Bash on Windows. The Git Bash is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to use and worth to install, because you want as little mess and fuzz as possible.
+
+Note that Git and Bash are completely separate programs, but they are called "Git Bash" on Windows. For Windows there is Command Prompt and PowerShell. I still reccommend you to use Git Bash as terminal for Windows. The Git Bash for Windows is not fully compatible with the original Bash in UNIX/Linux/BSD but still it is worth to use and worth to install, simply because you want as little mess and fuzz as possible.
 
 #### **1.1.1 How to install Git and Bash on Linux or Mac?**
 
