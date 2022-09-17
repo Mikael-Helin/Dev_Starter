@@ -4,22 +4,22 @@ The purpose with this image, is to let junior and aspiring developers get starte
 
 ## **1. What is this?**
 
-It is the LAMP stack on a single image. The pros and cons compared to a build from official images are following:
+It is the LAMP stack on a single image. The pros and cons compared to a build from official images are the following:
 
-Pros:
+**Pros:**
 1. Everything is in one Image that works.
 2. Less to configure.
 
-Cons:
+**Cons:**
 1. It is not an official image.
 2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
 3. Harder to re-configure.
 
-It is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case, a MySQL/MariaDB client.
+This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case some MySQL/MariaDB client.
 
 ## **1.1. Using Official Images**
 
-If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
+If you want to use a build from the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
 
 ___
 
@@ -39,7 +39,7 @@ Other details:
 
 **Web-GUI URL: http://localhost:81/phpmyadmin**
 
-Login into Web-GUI (phpMyAdmin) and login with user and pssword.
+Login into Web-GUI, phpMyAdmin, and login with user and pssword.
 ___
 
 ## **3. Pre-Requestives**
@@ -81,7 +81,7 @@ When the container is running, then you need to
 * enter the container and
 * inside the container start its services.
 
-This is how you do it:
+This is how you do it in 2 lines:
 
 Windows:
 
@@ -93,7 +93,7 @@ Linux and Mac:
         docker attach mariadb
         /root/start.sh
 
-Now try to surf to the url given above! You should see the phpMyAdmin login. Login and do whatever you like to do. Maybe you want to change the root password?
+Now try to surf to the url given above! You should see the phpMyAdmin login. Login and do whatever you like to do. Maybe you want to change the root password? Add and remove users?
 
 If any service crashes, then run those commands above again.
 ___
