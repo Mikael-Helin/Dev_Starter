@@ -4,21 +4,21 @@ The purpose with this image, is to let junior and aspiring developers get starte
 
 ## **1. What is this?**
 
-It is the LAMP stack built from multiple images. The pros and cons compared to my custom made image are following:
+It is the LAMP stack built from multiple images. The pros and cons compared to my custom made image are the following:
 
 Pros:
-1. Is made from official images.
+1. It is a build from official images.
 2. Your chosen root password is sent in as an environment variable into the container.
 3. Takes less space.
 
 Cons:
-1. May break after updates when scripts don't match anymore.
+1. May break after updates when scripts don't match images anymore.
 
-These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client, in this case, a MySQL/MariaDB client.
+These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client, in this case some MySQL/MariaDB client.
 
-## **1.1. Using Official Images**
+## **1.1. Using Custom Image**
 
-If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_official
+If you want to use the custom image, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom
 
 ___
 
