@@ -8,25 +8,15 @@ It is the LAMP stack built from multiple images.
 
 Pros:
 1. Is made from official images.
-2. Your chosen root password is sent as an environment variable.
+2. Your chosen root password is sent in as an environment variable into the container.
 3. Takes less space.
 
 Cons:
-1. May break after updates when images don't match anymore.
+1. May break after updates when scripts don't match anymore.
 
 These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client, in this case, a MySQL/MariaDB client.
 
 ## **1.1. Using Official Images**
-
-Pros:
-1. Are official images.
-2. Passwords are sent in as environment variables.
-3. Takes less space.
-
-Cons:
-1. 
-
-Why not then take official MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the official image and work with it but sometimes the official images may break and then you come back here, since you know here we have the image that works.
 
 If you want to use the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_official
 
