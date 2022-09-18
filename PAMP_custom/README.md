@@ -8,6 +8,7 @@ This is a Debian Linux image with PostgreSQL installed and configured. This imag
 
 1. Everything is in one image that works out of the box.
 2. Less to configure.
+3. Ready for PAMP development.
 
 **Cons:**
 
@@ -69,26 +70,31 @@ Linux and Mac:
         docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
         --name postgres -ti mikaelhelin/debian_postgres bash
 
-### **4.1. Run The Container on Web Content**
+### **4.1. Run This Container for PAMP Development**
 
-First create some web content. Open a terminal and type
+The web content in placed in the folder **/var/www/html**. This content we like to map to a folder on the host.
 
-        mkdir web_content
-        echo "Hello World!" >> web_content/index.html
+1. Choose a directory on your host computer and open a terminal there. I choose **C:\temp\test** for this example.
+2. You must have some web content, so let us create some:
 
-then
+     echo "Hello Docker World!" >> index.html
+
+3. And now when we have web content, we may start the containers.
 
 Windows:
 
-        winpty docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
-        -v $(pwd)/web_content/:/var/www/html/ \
-        --name postgres -ti mikaelhelin/debian_postgres bash
+    winpty docker run -d \
+    -v c:\\temp\\test:/var/www/html  \
+    -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
+    --name postgres -ti mikaelhelin/debian_postgres bash
 
 Linux and Mac:
 
-        docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
-        -v "$(pwd)/web_content":/var/www/html/ \
-        --name postgres -ti mikaelhelin/debian_postgres bash
+    docker run -d -v $(pwd):/var/www/html  \
+    -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
+    --name postgres -ti mikaelhelin/debian_postgres bash
+
+What is left, is to start the services, which is done in the next section.
 ___
 
 ## **5. Starting the Services**

@@ -4,7 +4,7 @@ The purpose with this image, is to let junior and aspiring developers get starte
 
 ## **1. What is this?**
 
-This is instructions on how to run Microsoft SQL Server in a Linux container. The Docker image used is the official image.
+This is instructions on how to run Microsoft SQL 2022 Server in a Linux container. The Docker image used here is the official image.
 
 ## **2. How to Access?**
 
@@ -60,7 +60,7 @@ ___
 
 ## **5. Testing to enter MSSQL CLI inside the container**
 
-When the container is running, it actually starts MSSQL. This is actually one way how you can test if MSSQL is running.
+When the container is running, it actually starts MSSQL. This is actually one way how you can test if MSSQL is running, by entering the MSSQL CLI.
 
 Windows:
 
@@ -81,7 +81,7 @@ ___
 
 You may want to skip this section and use Azure Data Studio as described in section 5.
 
-Download SQL Server Management Studio (SSMS) from here (windows only). Link: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+Download SQL Server Management Studio (SSMS) from here (windows only). https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 
 And when you installed and started SSMS do the following:
 
@@ -112,4 +112,3 @@ After installing Azure Data Studio (on Windows), this is how I accessed MSSQL. S
 * and finally click on the **Connect** button.
 
 Are you in? I hope so... it worked for me.
-
