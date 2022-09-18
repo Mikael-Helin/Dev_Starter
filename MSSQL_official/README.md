@@ -1,4 +1,12 @@
-# **MSSQL on Docker**
+# **MSSQL on Docker (official image)**
+
+The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
+
+## **1. What is this?**
+
+This is instructions on how to run Microsoft SQL Server in a Linux container. The Docker image used is the official image.
+
+## **2. How to Access?**
 
 Database credentials:
 
@@ -14,18 +22,18 @@ Other details:
 
 ___
 
-## **1. Pre-Requestives**
+## **3. Pre-Requestives**
 
-Have Bash installed on your system.
+Have a terminal installed on your system.
 
 Have Docker or Docker Desktop installed on your system.
 
 See section 1-2 in https://github.com/Mikael-Helin/Dev_Starter
 ___
 
-## **2. Run The Container**
+## **4. Run This Container**
 
-The information I got from Microsoft website, didn't work for me, lot of bogus stuff in that documentation. Link: https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash
+The information I got from Microsoft website, didn't work for me, lot of bogus stuff in that documentation. https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash
 
 After fiddeling around, following is what worked for me on Docker Desktop for Windows *(remove winpty if you are on Linux or Mac)*.
 
@@ -50,7 +58,7 @@ That is all, and you are done! :-)
 But if you insist? You can proceed to test if MSSQL is running.
 ___
 
-## **3. Testing to enter MSSQL CLI inside the container**
+## **5. Testing to enter MSSQL CLI inside the container**
 
 When the container is running, it actually starts MSSQL. This is actually one way how you can test if MSSQL is running.
 
@@ -69,7 +77,7 @@ Linux and Mac:
 
 ___
 
-## **4. Testing MSSQL with SQL Server Management Studio**
+## **6. Testing MSSQL with SQL Server Management Studio**
 
 You may want to skip this section and use Azure Data Studio as described in section 5.
 
@@ -87,7 +95,7 @@ And when you installed and started SSMS do the following:
 You're in!
 
 
-## **5. Testing MSSQL with SQL Server Management Studio**
+## **7. Testing MSSQL with SQL Server Management Studio**
 
 Azure Data Studio exists for Windows, Mac and Linux.
 
