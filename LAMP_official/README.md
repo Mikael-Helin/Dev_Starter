@@ -6,12 +6,12 @@ The purpose with this image, is to let junior and aspiring developers get starte
 
 It is the LAMP stack built from multiple images. The pros and cons compared to my custom made image are the following:
 
-Pros:
+**Pros:**
 1. It is a build from official images.
 2. Your chosen root password is sent in as an environment variable into the container.
 3. Takes less space.
 
-Cons:
+**Cons:**
 1. May break after updates when scripts don't match images anymore.
 2. Additional configuration needed for LAMP development. (That configuration is not shown in the guide)
 

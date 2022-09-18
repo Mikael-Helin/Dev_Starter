@@ -9,6 +9,7 @@ It is the LAMP stack on a single image. The pros and cons compared to a build fr
 **Pros:**
 1. Everything is in one image that works.
 2. Less to configure.
+3. Ready for LAMP development.
 
 **Cons:**
 1. It is not an official image.
