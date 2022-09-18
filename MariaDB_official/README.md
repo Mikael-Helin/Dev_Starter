@@ -4,7 +4,7 @@ The purpose of this example, is to let junior and aspiring developers get starte
 
 ## **1. What is this?**
 
-Here are instructions for running the official image of MariaDB. This image has no Web-GUI. You choose root password by passing in environment varaibles. You may want to use LAMP official image (https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official) first and then later in the development stage this image on this page?
+Here are instructions for running the official image of MariaDB. This image has no Web-GUI. You choose root password by passing in environment varaibles. You may want to use LAMP official image (https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official) in the beginning of the development stage and then later in the development stage you may want to instead use the image on this page?
 
 ___
 
