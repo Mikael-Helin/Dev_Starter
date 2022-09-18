@@ -69,24 +69,6 @@ All computers:
 
         docker-compose up
 
-### **4.1. Run this Container for LAMP Development**
-
-The web content in placed in the folder **/var/www/html**. This content we like to map to a folder on the host.
-
-1. Choose a directory on your host computer and open a terminal there. Then type:
-
-Windows:
-
-        MSYS_NO_PATHCONV=1 winpty docker run -d \
-        -v `pwd`:/var/www/html  \
-        -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
-
-Linux and Mac:
-
-        docker run -d -v `pwd`:/var/www/html  \
-        -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
 ___
 
 ## **5. Root Login fails? (optional)**
