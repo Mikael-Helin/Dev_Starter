@@ -75,16 +75,18 @@ Linux and Mac:
 
 The web content in placed in the folder **/var/www/html**. This content we like to map to a folder on the host.
 
-1. Choose a directory on your host computer and open a terminal there. First you must create some web content:
+1. Choose a directory on your host computer and open a terminal there. I choose **C:\temp\test** for this example.
+   
+2. You must have some web content, so let us create some:
 
         echo "Hello Docker World!" >> index.html
 
-2. And now when we have web content, we mat start the containers.
+3. And now when we have web content, we may start the containers.
 
 Windows:
 
-        MSYS_NO_PATHCONV=1 winpty docker run -d \
-        -v `pwd`:/var/www/html  \
+        winpty docker run -d \
+        -v c:\\temp\\test:/var/www/html  \
         -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
 
@@ -93,6 +95,8 @@ Linux and Mac:
         docker run -d -v $(pwd):/var/www/html  \
         -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
+
+What is left, is to start the services, which is done in the next section.
 ___
 
 ## **5. Starting the  Services**

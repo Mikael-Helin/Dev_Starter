@@ -13,7 +13,7 @@ It is the LAMP stack built from multiple images. The pros and cons compared to m
 
 **Cons:**
 1. May break after updates when scripts don't match images anymore.
-2. Additional configuration needed for LAMP development. (That configuration is not shown in the guide)
+2. Additional configuration needed for LAMP development. (Such configuration is not shown in this repo. You may want to use the LAMP custom image instead?)
 
 These images have MariaDB and phpMyAdmin as Web-GUI, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some MySQL/MariaDB client.
 

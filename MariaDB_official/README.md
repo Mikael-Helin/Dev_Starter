@@ -1,31 +1,10 @@
-# **Running MariaDB on Docker (using official image)**
+# **Running MariaDB on Docker (official image)**
 
 The purpose of this example, is to let junior and aspiring developers get started with as little fuzz as possible.
 
 ## **1. What is this?**
 
-Pros:
-1. Are official images.
-2. Passwords are sent in as environment variables.
-3. Takes less space.
-
-Cons:
-1. May break after updates when images don't match anymore.
-
-These images have MariaDB and phpMyAdmin as Web-GUI, so you will not need to bloat your computer by installing yet another client.
-
-## **1.1. Using Custom Image**
-
-Pros:
-1. Everything in one Image that works.
-2. Less to configure.
-
-Cons:
-1. Is not official image.
-2. Cumbersome to change password, which you can for example do in phpMyAdmin.
-3. Harder to re-configure.
-
-Why not then take the custom MariaDB image? Using the offical images is actually easy and straighforward and takes less space. You are free to use the custom image too. If you want to use the custom image, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/MariaDB_custom
+Instructions for the official image of MariaDB. It has no Web-GUI. You choose root password by passing in environment varaibles. You may want to use LAMP official image (https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official) first and then later in the development stage this image?
 
 ___
 
@@ -42,10 +21,6 @@ Other details:
 **database host: localhost**
 
 **database port: 3306**
-
-**Web-GUI URL: http://localhost:81**
-
-Login into Web-GUI with server **mariadb_host** and then use MariaDB root credentials.
 ___
 
 ## **3. Pre-Requestives**
