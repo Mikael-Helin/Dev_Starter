@@ -45,7 +45,7 @@ If you want, you can choose another root password, it is up to you.
 
 All computers:
 
-        docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
+        docker run -d -p 0.0.0.0:3306:3306 \
         -e MARIADB_ROOT_PASSWORD=mariadb.2022 \
         --name mariadb mariadb
 
