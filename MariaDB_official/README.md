@@ -43,11 +43,17 @@ But if you already have the needed images, then the same following command will 
 
 If you want, you can choose another root password, it is up to you.
 
-All computers:
+Windows:
+
+        winpty docker run -d -p 0.0.0.0:3306:3306 \
+        -e MARIADB_ROOT_PASSWORD=mariadb.2022 \
+        --name mariadb -ti mariadb bash
+
+Linux and Mac:
 
         docker run -d -p 0.0.0.0:3306:3306 \
         -e MARIADB_ROOT_PASSWORD=mariadb.2022 \
-        --name mariadb mariadb
+        --name mariadb -ti mariadb bash
 
 ___
 
@@ -59,4 +65,18 @@ All computers:
 
         docker exec mariadb ps aux | grep maria
 
-after running that command you should see if **mariadbd** has its own process. If it has, then MariaDB is running.
+after running that command you should see if **mariadbd** has its own process. If it has, then MariaDB is running. If MariaDB has stopped, we need to start it. Here we restart and access MariaDB CLI.
+
+Windows:
+
+        winpty docker attach mariadb
+        /etc/init.d/mariadb restart
+        mysql -u root -p
+
+Linux and Mac
+
+        docker attach mariadb
+        /etc/init.d/mariadb restart
+        mysql -u root -p
+
+If you still have issues, then you better use my custom image https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom. 

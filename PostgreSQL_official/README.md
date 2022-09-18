@@ -46,16 +46,6 @@ If you want, you can choose another root password, it is up to you.
 All computers:
 
         docker run -d -p 0.0.0.0:5432:5432 \
-	-e POSTGRES_PASSWORD=postgres.2022 \
+        -e POSTGRES_PASSWORD=postgres.2022 \
         --name postgres postgres
-___
 
-## **5. Starting the Service**
-
-PostgreSQL is already running. But if you need to test...
-
-All computers:
-
-        docker exec postgres ps aux | grep postgres
-
-after running that command you should see if **mariadbd** has its own process. If it has, then MariaDB is running.
