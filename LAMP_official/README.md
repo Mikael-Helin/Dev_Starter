@@ -35,6 +35,8 @@ Other details:
 
 **database host: localhost**
 
+**Web-GUI database host: mariadb**
+
 **database port: 3306**
 
 **Web-GUI URL: http://localhost:81**
@@ -60,7 +62,7 @@ If you don't have the needed image, then the following command will download the
 
 But if you already have the needed image, then the same following command will just run the container from the already downloaded image.
 
-You can change the MariaDB root password in the docker-compose.yml file. Open a terminal in the same folder where you have the docker-compose.yml file. Then type:
+You can change the MariaDB root password in the docker-compose.yml file. **Open a terminal in the same folder where you have the docker-compose.yml file. Then type:**
 
 All computers:
 
@@ -68,7 +70,7 @@ All computers:
 
 ___
 
-## **5. Root Login**
+## **5. Root Login fails? (optional)**
 
 When you login, set server as **mariadb** (not localhost) and then login with the given credentials.
 

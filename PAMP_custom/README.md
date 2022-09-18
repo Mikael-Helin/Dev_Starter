@@ -17,7 +17,7 @@ This is a Debian Linux image with PostgreSQL installed and configured. This imag
 
 ### **1.1. PAMP**
 
-Myself, I thought you use this image for postgreSQL only. If you want web content for this image, then you can place the web content in the folder **/var/www/html** inside the container or then you map the folder **/var/www/html** to some folder on the host.
+Myself, I thought you use this image for postgreSQL only. If you want web content for this image, then you can place the web content in the folder **/var/www/html** inside the container or then you map the folder **/var/www/html** to some folder on the host. For the latter case, see section 4.1.
 
 ___
 
@@ -69,6 +69,26 @@ Linux and Mac:
         docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
         --name postgres -ti mikaelhelin/debian_postgres bash
 
+### **4.1. Run The Container on Web Content**
+
+First create some web content. Open a terminal and type
+
+        mkdir web_content
+        echo "Hello World!" >> web_content/index.html
+
+then
+
+Windows:
+
+        winpty docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
+        -v $(pwd)/web_content/:/var/www/html/ \
+        --name postgres -ti mikaelhelin/debian_postgres bash
+
+Linux and Mac:
+
+        docker run -d -p 0.0.0.0:82:80 -p 0.0.0.0:5432:5432 \
+        -v "$(pwd)/web_content":/var/www/html/ \
+        --name postgres -ti mikaelhelin/debian_postgres bash
 ___
 
 ## **5. Starting the Services**
@@ -76,6 +96,7 @@ ___
 First you need to run the container (see section 4).
 
 When the container is running, then you need to
+
 * enter the container and
 * inside the container start its services.
 
