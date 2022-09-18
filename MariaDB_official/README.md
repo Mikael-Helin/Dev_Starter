@@ -79,4 +79,5 @@ Linux and Mac
         /etc/init.d/mariadb restart
         mysql -u root -p
 
-If you still have issues, then you better use my custom image https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom. 
+If you still have issues, then you better use my custom image https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_custom.
+

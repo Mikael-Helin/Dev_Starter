@@ -49,3 +49,8 @@ All computers:
         -e POSTGRES_PASSWORD=postgres.2022 \
         --name postgres postgres
 
+## **5. Azure Data Studio**
+
+Using PSQL in Docker container is not straightforward, however there is another solution.
+
+By using the PostgreSQL extension in Azure Data Studio you may connect to the database.
