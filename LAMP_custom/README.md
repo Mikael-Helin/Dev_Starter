@@ -71,11 +71,15 @@ Linux and Mac:
         docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
 
-### **4.1. Run this Container for LAMP Development**
+### **4.1. Run This Container for LAMP Development**
 
 The web content in placed in the folder **/var/www/html**. This content we like to map to a folder on the host.
 
-1. Choose a directory on your host computer and open a terminal there. Then type:
+1. Choose a directory on your host computer and open a terminal there. First you must create some web content:
+
+        echo "Hello Docker World!" >> index.html
+
+2. And now when we have web content, we mat start the containers.
 
 Windows:
 
@@ -86,7 +90,7 @@ Windows:
 
 Linux and Mac:
 
-        docker run -d -v `pwd`:/var/www/html  \
+        docker run -d -v $(pwd):/var/www/html  \
         -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
 ___
