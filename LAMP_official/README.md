@@ -13,6 +13,7 @@ Pros:
 
 Cons:
 1. May break after updates when scripts don't match images anymore.
+2. Additional configuration needed for LAMP development. (That configuration is not shown in the guide)
 
 These images have MariaDB and phpMyAdmin as Web-GUI, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some MySQL/MariaDB client.
 
@@ -62,7 +63,7 @@ If you don't have the needed image, then the following command will download the
 
 But if you already have the needed image, then the same following command will just run the container from the already downloaded image.
 
-You can change the MariaDB root password in the docker-compose.yml file. **Open a terminal in the same folder where you have the docker-compose.yml file. Then type:**
+You can change the MariaDB root password in the docker-compose.yml file. **Open a terminal in the same folder where you have the docker-compose.yml file. Then in the terminal type:**
 
 All computers:
 
