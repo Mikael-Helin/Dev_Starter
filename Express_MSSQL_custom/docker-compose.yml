@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    restart: always
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Str9ng_Pwd
+
+  nodejs:
+    image: mikaelhelin/ubuntu_nodejs
+    container_name: nodejs
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      - NODE_PORT=8080
+

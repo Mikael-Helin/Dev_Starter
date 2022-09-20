@@ -1,0 +1,41 @@
+version: '3.5'
+
+services:
+  web:
+    image: mikaelhelin/ubuntu_nodejs
+    container_name: nodejs
+    tty: true
+    ports:
+      - 80:80
+    volumes:
+      - ./web:/var/www
+    command: cd /var/www && npm install
+    command: cd /var/www && npm start
+    command: /bin/bash
+
+  db:
+    image: mikaelhelin/debian_postgres
+    container_name: postgres
+    tty: true
+    ports:
+      - 5432:5423
+      - 82:80
+    command: /bin/bash -c "
+        /root/start.sh &&
+        /bin/bash
+      "
+
+  api:
+    image: mikaelhelin/ubuntu_nodejs
+    container_name: api
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - ./api:/var/www
+    command: cd /var/www && npm install
+    command: cd /var/www && node index.js
+    command: /bin/bash
+    depends_on:
+      - db
+
