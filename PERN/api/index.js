@@ -1,7 +1,17 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const pool = require("./db");
+const { Pool } = require("pg");
+
+const creds = {
+  user: "postgres",
+  password: "postgres.2022",
+  host: "192.168.0.20",
+  port: 5432,
+  database: "perntodo"
+};
+
+const pool = new Pool(creds);
 
 //middleware
 app.use(cors());
@@ -31,6 +41,7 @@ app.get("/todos", async (req, res) => {
   try {
     const allTodos = await pool.query("SELECT * FROM todo");
     res.json(allTodos.rows);
+    console.log(allTodos.rows)
   } catch (err) {
     console.error(err.message);
   }

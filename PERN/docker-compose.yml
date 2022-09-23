@@ -18,8 +18,10 @@ services:
     container_name: postgres
     tty: true
     ports:
-      - 5432:5423
+      - 5432:5432
       - 82:80
+    volumes:
+      - ./api:/var/www
     command: /bin/bash -c "
         /root/start.sh &&
         /bin/bash

@@ -9,8 +9,9 @@ const EditTodo = ({ todo }) => {
     e.preventDefault();
     try {
       const body = { description };
+	  // eslint-disable-next-line
       const response = await fetch(
-        `http://localhost:5000/todos/${todo.todo_id}`,
+        `http://localhost:8080/todos/${todo.todo_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

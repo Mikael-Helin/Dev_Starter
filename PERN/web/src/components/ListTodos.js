@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import EditTodo from "./EditTodo";
 
@@ -9,7 +9,8 @@ const ListTodos = () => {
 
   const deleteTodo = async id => {
     try {
-      const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
+	  // eslint-disable-next-line
+      const deleteTodo = await fetch(`http://localhost:8080/todos/${id}`, {
         method: "DELETE"
       });
 
@@ -21,7 +22,8 @@ const ListTodos = () => {
 
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/todos");
+	  // eslint-disable-next-line
+      const response = await fetch("http://localhost:8080/todos");
       const jsonData = await response.json();
 
       setTodos(jsonData);
@@ -37,7 +39,7 @@ const ListTodos = () => {
   console.log(todos);
 
   return (
-    <Fragment>
+    <>
       {" "}
       <table class="table mt-5 text-center">
         <thead>
@@ -48,11 +50,6 @@ const ListTodos = () => {
           </tr>
         </thead>
         <tbody>
-          {/*<tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr> */}
           {todos.map(todo => (
             <tr key={todo.todo_id}>
               <td>{todo.description}</td>
@@ -71,7 +68,7 @@ const ListTodos = () => {
           ))}
         </tbody>
       </table>
-    </Fragment>
+    </>
   );
 };
 

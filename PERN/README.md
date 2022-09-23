@@ -1,49 +1,18 @@
-# **Running MariaDB and Web-GUI on Docker (custom image)**
+# **Running PERN with a ToDo example (custom image)**
 
 The purpose with this image, is to let junior and aspiring developers get started with as little fuzz as possible.
 
 ## **1. What is this?**
 
-It is the LAMP stack on a single image. The pros and cons compared to a build from official images are the following:
+This is a small modification on a PERN tutorial from FreeCodeCamp.org. The modifications are made so that you can test PERN dev containers. But if you prefer, you skip the example and just start with your own PERN project.
 
-**Pros:**
-1. Everything is in one image that works.
-2. Less to configure.
-3. Ready for LAMP development.
+https://www.youtube.com/watch?v=ldYcgPKEZC8
 
-**Cons:**
-1. It is not an official image.
-2. Cumbersome to change root password, which you may for example do in phpMyAdmin.
-3. Harder to re-configure.
-
-This is a Debian Linux image with MariaDB configured. This image also has a Web-GUI client, phpMyAdmin, to access MariaDB, so you will not need to bloat your computer by installing yet another client, in this case you do not need to install some MySQL/MariaDB client.
-
-## **1.1. Using Official Images**
-
-If you want to use a build from the offical images, then have a look here https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
+Do expect troubleshooting. We may only hope these containers work well out for you!
 
 ___
 
-## **2. How to Acess?**
-
-Database credentials:
-
-**user: root**
-
-**password: mariadb.2022**
-
-Other details:
-
-**database host: localhost**
-
-**database port: 3306**
-
-**Web-GUI URL: http://localhost:81/phpmyadmin**
-
-Login into Web-GUI, phpMyAdmin, and login with user and password.
-___
-
-## **3. Pre-Requestives**
+## **2. Pre-Requestives**
 
 Have a terminal installed on your system.
 
@@ -53,7 +22,7 @@ See section 1-2 in https://github.com/Mikael-Helin/Dev_Starter
 
 ___
 
-## **4. Run This Container**
+## **3. Run These Containers**
 
 It is recommended that you fulfill the pre-requestives (see section 3).
 
@@ -61,81 +30,109 @@ If you don't have the needed image, then the following command will download the
 
 But if you already have the needed image, then the same following command will just run the container from the already downloaded image.
 
-Windows:
+Open a terminal in the location where you have the docker-compose.yml file. Then type
+
+All machines:
 
         winpty docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
         --name mariadb -ti mikaelhelin/debian_mariadb bash
 
-Linux and Mac:
+## **4. Test and Configure the Containers**
 
-        docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
+### **4.1. Is the PostgreSQL container running as it should? (optional)**
 
-### **4.1. Run This Container for LAMP Development**
+We use the customer PostgreSQL container made by me. You find it and its login credentials here: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_custom
 
-The web content in placed in the folder **/var/www/html**. This content we like to map to a folder on the host.
+So, if you manage to login into http://localhost:82/phppgadmin then it works and you can proceed to the next step.
 
-1. Choose a directory on your host computer and open a terminal there. I choose **C:\temp\test** for this example.
-   
-2. You must have some web content, so let us create some:
-
-        echo "Hello Docker World!" >> index.html
-
-3. And now when we have web content, we may start the containers.
-
-Windows:
-
-        winpty docker run -d \
-        -v c:\\temp\\test:/var/www/html  \
-        -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
-
-Linux and Mac:
-
-        docker run -d -v $(pwd):/var/www/html  \
-        -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
-        --name mariadb -ti mikaelhelin/debian_mariadb bash
-
-What is left, is to start the services, which is done in the next section.
 ___
 
-## **5. Starting the  Services**
+### **4.2. Initiate the PostgreSQL Database**
 
-First you need to run the container (see section 4).
+By unknown reasons
 
-When the container is running, then you need to
+        winpty attach <containerId>
 
-* enter the container and
-* inside the container start its services.
+does not work on Windows (I have Windows 10 Pro), so instead we must use
 
-This is how you do it in 2 lines:
+        winpty docker exec -ti <containerId> bash
 
-Windows:
+which means the same thing just written in another way.
 
-        winpty docker attach mariadb
-        /root/start.sh
+OK, first we must find the **containerID**, either you type
 
-Linux and Mac:
+        docker ps
 
-        docker attach mariadb
-        /root/start.sh
+in your terminal or then you have a look in Docker Desktop for the container named **postgres** and find its containerId from there.
 
-Now try to surf to the url given above! You should see the phpPgAdmin login. Login and do whatever you like to do. Maybe you want to change the root password? Add and remove users?
+        winpty docker exec -ti c5 bash
+        su postgres
+        psql -U postgres -a -f /var/www/init_database1.sql
+        psql -U postgres -d perntodo -a -f /var/www/init_database2.sql
+        exit
+        exit
+        exit
 
-If any service crashes, then run those commands above again.
+As you might have guessed, **c5** is the containerId in my case. These id's are different everytime.
+
 ___
 
-## **6. Testing with Sample Data**
+### **4.3. Testing PostgreSQL Connection (optional)**
 
-You should have completed sections 3-5.
+If you want, you may test to connect with Azure Data Studio... or with something else. If you didn't fail, then you are ready for the next step.
 
-When you have logged in into phpMyAdmin:
+___
 
-* Click the Databases tab,
-* enter "food" as 'Database Name' into the field,
-* click the Create-button,
-* click the Import tab,
-* click on browse and upload **food.sql**.
-* Click the Go-button.
-  
-And now you have uploaded some sample data. Continue to do whatever exersice you like to do. Pherhaps try to export to different format, delete the database and then import the exported database?
+### **4.4. Configure and Start the API Server**
+
+You must configure the connection from Express to PostgreSQL. Currently line 9 in the file **PERN/api/index.js** contains the IP number **192.168.0.20**. In my case, neither **localhost** nor **127.0.0.1** worked, so I had to take the IP number given by DHCP from my home router. Your computer probably has another IP address in your LAN, you find it with help of typing **ipconfig** in the terminal (if you are on Windows).
+
+Next, type in your terminal
+
+        winpty docker exec -ti 58 bash
+        cd /var/www
+        npm install
+        node index.js
+
+and type that with the correct containerId.
+
+__
+
+### **4.5. Test the API Server (optional)**
+
+With Postman you can test if the API server works as expected.
+
+https://www.postman.com/
+
+Test **POST** to http://localhost:8080/todos with the **raw** text
+
+        { "description": "I am here!" }
+
+and with **JSON** marked!
+
+___
+
+### **4.6. Start and Test the Frontend**
+
+Again, open a new terminal... don't forget to findout the correct containerID
+
+        winpty docker exec -ti 28 bash
+        cd /var/www
+        npm install
+        npm start
+
+Surf to http://localhost and it should work.
+
+## **5. Troubleshooting**
+
+I had many issues to set this up. The hardest part was to figure out how to connect from Express to PostgreSQL. It took me 2 work days to figure out that little thing.
+
+Things I found out:
+1. You may need to uninstall npm packages and reinstall them, even if they are the same version.
+2. You may need to use another IP than localhost or 127.0.0.1.
+3. Docker on Windows is not the same as Docker on Linux.
+4. Git Bash is far away from being compilant to the original.
+5. Hot reload for React or Nodemon, only work when they want to work. I have no control of that little child.
+6. The mainstream believes Docker solves all dependency issues but such belief is not far fetched from the belief QAnon has.
+7. It is about luck and patience.
+
