@@ -122,7 +122,7 @@ ___
 
 ### **4.6. Start and Test the Frontend**
 
-Again, open a new terminal... don't forget to findout the correct containerID
+Again, open a new terminal... don't forget to find out the correct containerID
 
         winpty docker exec -ti 28 bash
         cd /var/www
