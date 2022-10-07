@@ -103,11 +103,12 @@ Visual Studio code is good to have.
 
 Link: https://code.visualstudio.com/
 
-There are 2 different ways you access and write your code together with Docker.
+There are 3 different ways you access and write your code together with Docker.
 1. You mount a folder (the folder with your code) as a volume outside the Docker container, or then
-2. you allow VS code access the inside of the Docker container. For this you need to install an extension. Link: https://www.youtube.com/watch?v=8gUtN5j4QnY
+2. you allow VS code access the inside of the Docker container. For this you need to install an extension ("Remote Containers" by Microsoft). https://www.youtube.com/watch?v=8gUtN5j4QnY
+3. Or you make a mixture of 1 and 2, use VS Code to access the code on the host via the container.
 
-Whichever means you access the code, it is meant that the software inside the container also has access to your code. For example, you do not have Python installed on your machine but you do have Python installed in a container, which in turn runs your code wherever you have chosen to place your code.
+Whichever means you access the code, it is meant that the software inside the container also has access to your code. For example, you do not have Python installed on your machine but you do have Python installed in a container, which in turn runs your code wherever you have chosen to place your code, be it on your host or your container.
 ___
 
 ## **2. Test Your Docker Installation (optional)**
@@ -182,7 +183,7 @@ _For more instuctions, please proceed to respective container folders._
 * (Official) MSSQL on Linux. https://github.com/Mikael-Helin/Dev_Starter/tree/main/MSSQL_official
 * (Official) MongoDB on Ubuntu Focal. https://github.com/Mikael-Helin/Dev_Starter/tree/main/MongoDB_official
 
-#### **4.1.2 Multi image conatiners**
+#### **4.1.2 Multi-image conatiners**
 
 * (Official) PAMP server = PostgreSQL with Apache2 + PHP and phpPgAdmin. https://github.com/Mikael-Helin/Dev_Starter/tree/main/PAMP_official
 * (Official) LAMP server = MariaDB with Apache2 + PHP and phpMyAdmin. https://github.com/Mikael-Helin/Dev_Starter/tree/main/LAMP_official
@@ -201,6 +202,6 @@ Link: https://github.com/Mikael-Helin/Dev_Starter/tree/main/PERN
 * Julia development environment.
 * Latex with compiling environment.
 
-#### **4.1.2 Future multi image conatiners**
+#### **4.1.2 Future multi-image conatiners**
 
 None

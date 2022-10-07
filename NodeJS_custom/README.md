@@ -33,7 +33,7 @@ Windows:
 
 Linux and Mac:
 
-        docker run -d -p 0.0.0.0:81:80 -p 0.0.0.0:3306:3306 \
+        docker run -d -p 0.0.0.0:8080:8080 \
         --name nodejs -ti mikaelhelin/ubuntu_nodejs bash
 
 To check the nodejs installation, type
@@ -48,3 +48,4 @@ Linux and Mac:
         docker attach nodejs
         node -v
 
+As you might have guessed, we run nothing yet as web service in this node constainer. You need to add for example an index.js file by yourself and run it with node. If you wants an example with content, have a look at https://github.com/Mikael-Helin/Dev_Starter/tree/main/PERN.

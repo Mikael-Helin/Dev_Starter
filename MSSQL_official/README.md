@@ -94,8 +94,7 @@ And when you installed and started SSMS do the following:
   
 You're in!
 
-
-## **7. Testing MSSQL with SQL Server Management Studio**
+## **7. Testing MSSQL with SQL Azure Data Studio**
 
 Azure Data Studio exists for Windows, Mac and Linux.
 
@@ -112,3 +111,6 @@ After installing Azure Data Studio (on Windows), this is how I accessed MSSQL. S
 * and finally click on the **Connect** button.
 
 Are you in? I hope so... it worked for me.
+
+## **7.1. Test Import CSV into MSSQL with SQL Azure Data Studio**
+
